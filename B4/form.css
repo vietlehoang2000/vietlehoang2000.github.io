@@ -1,0 +1,25 @@
+input {
+  width: 100px;
+  height: 20px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid blue;
+}
+input:not(:valid) {
+  border: 3px solid red;
+}
+input::placeholder {
+  font-size: 10px;
+  font-style: italic;
+}
+
+input:placeholder-shown {
+  background-color: yellow;
+}
+
+input:checked {
+  font-size: 30px;
+}

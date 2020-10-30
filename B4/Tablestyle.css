@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+table{
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+table, tr,th,td{
+    border: 1px solid red;
+}
+
+th,td{
+    width: 100px;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: pink;
+}
