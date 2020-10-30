@@ -1,0 +1,147 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+.wrap {
+  max-width: 960px;
+  margin: auto;
+}
+section.Iphone_12_Pro {
+  background-image: url(https://www.apple.com/v/iphone-12-pro/a/images/meta/iphone-12-pro_overview__d5t6ow03nkmu_og.png);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  color: silver;
+  text-align: center;
+}
+.headline {
+  color: silver;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  height: 50px;
+}
+
+nav {
+  height: 44px;
+  background: #323232;
+  text-align: center; /* to center the UL in the nav */
+}
+
+nav ul {
+  display: flex;
+  max-width: 1200px; /* change to desired width */
+  /* removed height from here, apply to a elements */
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto; /* 0 auto allows it to self-center in the nav */
+  list-style-type: none;
+}
+
+nav li {
+}
+
+nav a {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #b8b8b8;
+}
+
+.product {
+  border-radius: 20px;
+  display: inline-block;
+  margin: 5px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 328.81px;
+}
+.product-img {
+  width: 214px;
+  height: 214px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.product-name {
+  text-decoration: none;
+  color: #323232;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.footerbox {
+  display: inline-block;
+  border: 1px solid #dddddd;
+  border-top-width: 5px;
+  width: 32.3333%;
+  padding: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer {
+  background-color: #f5f5f7;
+  font-size: 1em;
+}
+
+div ul {
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner_shop_online {
+  height: 15px;
+  background-color: #0071e3;
+  text-align: center;
+  padding: 12px 0;
+  color: #ffffff;
+  margin-top: 0;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  margin-top: 5px;
+  width: 25px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+

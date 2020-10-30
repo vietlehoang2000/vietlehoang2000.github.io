@@ -1,0 +1,27 @@
+ul {
+  list-style: upper-roman;
+}
+a {
+  text-decoration: none;
+  cursor: default;
+}
+.img{
+  text-align: center;
+}
+img {
+  
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+header{
+  background-color: silver;
+
+}
+
+main{
+  background-image: url(https://kenh14cdn.com/thumb_w/640/2020/8/24/ebivgg4xyamdpuu-15982601028071418655987-crop-15982601123821339453958.jpg);
+  background-position: center;
+  background-size: cover;
+}
