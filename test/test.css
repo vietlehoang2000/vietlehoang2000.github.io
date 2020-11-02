@@ -1,0 +1,7 @@
+.appear {
+  display: none;
+}
+
+#test1:checked + .appear {
+  display: block;
+}
