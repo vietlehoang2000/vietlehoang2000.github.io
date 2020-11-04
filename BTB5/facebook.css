@@ -160,6 +160,7 @@
   background: #f0f2f5;
   height: 1000px;
   width: 100%;
+
 }
 .wrapper2 {
   max-width: 480px;
@@ -167,7 +168,7 @@
   background-color: transparent;
   background-color: white;
   margin-top: 80px;
-  margin-left: 900px;
+  margin-left: 600px;
   float: left;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
