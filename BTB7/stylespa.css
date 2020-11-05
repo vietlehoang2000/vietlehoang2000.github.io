@@ -479,13 +479,13 @@ header {
   color: #888888;
 }
 
-.last-banner-form img{
-    width: 54px;
-    height: 60px;
+.last-banner-form img {
+  width: 54px;
+  height: 60px;
 }
-.address-img{
-    margin-right: 20px;
-    margin-top: 5px;
+.address-img {
+  margin-right: 20px;
+  margin-top: 5px;
 }
 .contact-info {
   width: 316px;
@@ -503,34 +503,34 @@ header {
   width: 100%;
 }
 
-.form-submit .button-read{
-    margin-top: -45px;
-    text-align: center;
-    margin-left: -450px;
+.form-submit .button-read {
+  margin-top: -45px;
+  text-align: center;
+  margin-left: -450px;
 }
 
 /* style footer */
 
-footer{
-    margin-top: 50px;
-    height: 400px;
-    background-color: rgb(255, 249, 248);
+footer {
+  margin-top: 50px;
+  height: 400px;
+  background-color: rgb(255, 249, 248);
 }
 
-.container-footer{
-    width: 1140px;
-    height: 244px;
-    margin-top: 100px;
-    margin-left: 230px;
+.container-footer {
+  width: 1140px;
+  height: 244px;
+  margin-top: 100px;
+  margin-left: 230px;
 }
 
-.spa-logo img{
-    margin-top: 50px;
-    margin-left: 550px;
+.spa-logo img {
+  margin-top: 50px;
+  margin-left: 550px;
 }
 
-.container-footer p{
-    margin-top: 20px;
+.container-footer p {
+  margin-top: 20px;
   font-size: 12px;
   font-weight: 300;
   line-height: 27px;
@@ -539,6 +539,22 @@ footer{
   margin-left: 430px;
 }
 
-.container-footer span{
-    color: rgb(255, 129, 126)
+.container-footer span {
+  color: rgb(255, 129, 126);
+}
+/* style decor */
+.first-banner-decor-img-2 {
+  position: absolute;
+  bottom: 30;
+  left: 820;
+}
+.first-banner-decor-img-3 {
+  bottom: 0;
+  left: 100;
+  position: absolute;
+}
+.first-banner-decor-img-5 {
+  position: absolute;
+  bottom: -100;
+  right: 200;
 }
