@@ -1,0 +1,665 @@
+/* style for animation */
+/* animation for nav */
+@keyframes nav {
+  from {
+    width: 100%;
+    height: 0;
+  }
+  to {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+
+/* style for layout */
+.container {
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.first-banner {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/first-banner-img.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.first-banner span {
+  color: rgb(161, 169, 176);
+}
+
+.text h1 {
+  color: rgb(53, 53, 53);
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 12px;
+  margin: 10px;
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+}
+
+.text p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 24px;
+}
+
+.button a {
+  background-color: rgba(61, 201, 179, 1);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 200px;
+  padding: 20px 15px;
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 0px 0px #309383;
+  margin: 60px 0 0;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.button a:hover{
+  background-color: rgb(165, 214, 207);
+  transition: background-color 0.5s linear;
+}
+#open {
+  font-size: 30px;
+  top: 100px;
+  display: block;
+}
+#close{
+  display: none;
+}
+#open i {
+  position: absolute;
+  display: none;
+}
+#menu-open {
+  display: none;
+}
+#menu-open:checked + header {
+  display: block;
+}
+
+#menu-open:checked ~ * #close {
+  display: block;
+}
+
+#menu-open:checked ~ * #open {
+  display: none;
+}
+/* style for second-banner */
+
+.second-banner {
+  background: #f3f5f8;
+  height: 400px;
+}
+
+.second-banner-topic h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  padding-top: 50px;
+  color: rgb(53, 53, 53);
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 50px;
+}
+
+.down-arrow-icon {
+  margin-bottom: 50px;
+}
+
+.second-banner-text {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 24px;
+  width: 950px;
+  height: 00px;
+  margin: auto;
+}
+
+/* style for third-banner */
+
+.third-banner-block-element-img-background {
+  display: block;
+  height: 175px;
+  width: 175px;
+  background: #3dc9b3;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 150px;
+}
+
+.third-banner h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  padding-top: 50px;
+  color: rgb(53, 53, 53);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.third-banner h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  padding-top: 50px;
+  color: rgb(53, 53, 53);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.third-banner-block p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 22px;
+}
+
+.third-banner-block-element {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  position: relative;
+}
+
+.third-banner-block-element:first-child {
+  margin-left: 200px;
+  margin-right: 50px;
+}
+
+.third-banner-block-element:last-child {
+  margin-right: 200px;
+  margin-left: 50px;
+}
+
+.third-banner-block-element-img {
+  position: absolute;
+  top: 60px;
+  left: 205px;
+  color: white;
+}
+
+.line {
+  content: " ";
+  border: solid 2px #3dc9b3;
+  display: block;
+  width: 35px;
+  margin: 15px auto;
+}
+/* style for forth banner */
+
+.forth-banner {
+  margin-top: 100px;
+}
+
+.forth-banner-img {
+  background-color: rgb(246, 246, 248);
+  width: 50%;
+}
+.forth-banner-slider p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 24px;
+}
+.forth-banner-slider {
+  z-index: 1;
+  background-color: white;
+  width: 50%;
+}
+.forth-banner-slider-text-block {
+  width: 480px;
+  height: 310px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+.forth-banner-slider h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  padding-top: 50px;
+  color: rgb(53, 53, 53);
+  font-size: 20px;
+  font-weight: 600;
+}
+/* style for fifth banner */
+.fifth-banner {
+  background-image: url(img/fifth-banner-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 315px;
+  margin-bottom: 100px;
+}
+
+.fifth-banner-text {
+  padding-top: 50px;
+}
+
+.fifth-banner-text h1 {
+  position: relative;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+}
+
+.fifth-banner h2 {
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: "Varela Round", sans-serif;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.fifth-banner-button-background {
+  display: block;
+  height: 45px;
+  width: 45px;
+  background-color: #3dc9b3;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 920px;
+}
+
+.fifth-banner-button-background:hover{
+   background-color: rgb(165, 214, 207);
+  transition: background-color 0.5s linear;
+}
+
+.fifth-banner-button-down {
+  color: white;
+  position: absolute;
+  margin-left: 935px;
+  margin-top: -30px;
+}
+
+/* style sixth banner */
+
+.sixth-banner-slider {
+  margin-left: 350px;
+  display: flex;
+  width: 1170px;
+  height: 443px;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.sixth-banner-slider img {
+  width: 400px;
+  height: 222px;
+}
+
+.sixth-banner-slide-img-hover {
+  width: 400px;
+  height: 222px;
+  position: absolute;
+  top: 0;
+  background-color:rgba(48, 147, 131, 0.6);
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  display: none;
+}
+
+.sixth-banner-slider-img:hover + .sixth-banner-slide-img-hover {
+  display: block;
+}
+
+
+
+.sixth-banner-slider p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 24px;
+}
+.sixth-banner-slider-item-1 {
+  margin-right: 100px;
+}
+
+.sixth-banner-slider-item-3 {
+  margin-left: 100px;
+}
+
+.sixth-banner-slider h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  padding-top: 50px;
+  color: rgb(53, 53, 53);
+  font-size: 18px;
+  font-weight: 600;
+}
+/* style seventh banner */
+
+.senventh-banner-slider h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  color: rgb(53, 53, 53);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.seventh-banner h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  color: rgb(53, 53, 53);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.senventh-banner-slider {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seventh-banner-slider-block {
+  width: 390px;
+  height: 600px;
+}
+
+.member-info-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.member-info-icon-background {
+  display: block;
+  height: 55px;
+  width: 55px;
+  background-color: black;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.icon:hover + .member-info-icon-background {
+  background-color: #309383;
+  transition: background-color 0.3s linear;
+}
+
+.member-info-icon-background:hover {
+  background: #309383;
+  transition: background-color 0.3s linear;
+}
+.icon-1 {
+  margin-right: 20px;
+}
+
+.icon-3 {
+  margin-left: 20px;
+}
+
+.icon {
+  color: white;
+  position: absolute;
+  top: 277px;
+  font-size: 23px;
+}
+
+.icon-1 .icon {
+  left: 107px;
+}
+
+.icon-2 .icon {
+  left: 184px;
+}
+
+.icon-3 .icon {
+  left: 257px;
+}
+
+.member-info p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 24px;
+}
+
+.member-info h1 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  line-height: 17px;
+  size: 15px;
+  margin-top: 50px;
+}
+/* style for eighth banner */
+
+.last-banner-block-element h1 {
+  display: block;
+  color: #3dc9b3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.last-banner-block-element p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.eighth-banner {
+  margin-top: 100px;
+  height: 443px;
+  background-image: url(img/eighth-banner-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+
+.paper-plane {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.eighth-banner-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.form-text-area input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 1px #fff;
+  padding: 17px;
+  width: 25%;
+  color: #fff;
+  font-size: 20px;
+}
+
+.eighth-banner-text h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.eighth-banner .button a {
+  background-color: rgba(61, 201, 179, 0.5);
+  border: solid 1px rgba(61, 201, 179, 0.5);
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 50px;
+  position: absolute;
+  top: 192;
+  left: 1200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.eighth-banner .button a:hover{
+  background-color: rgb(165, 214, 207);
+  transition: background-color 0.5s linear;
+}
+.eighth-banner-button-background {
+  display: block;
+  height: 45px;
+  width: 45px;
+  background-color: rgba(61, 201, 179, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 920px;
+  margin-top: 110px;
+}
+.eighth-banner-button-background:hover{
+background-color: rgb(165, 214, 207);
+  transition: background-color 0.5s linear;
+}
+.eighth-banner-button-down {
+  color: white;
+  position: absolute;
+  margin-left: 935px;
+  margin-top: -30px;
+}
+
+/* style for last banner */
+.last-banner {
+  margin-top: -20px;
+  background-color: rgb(246, 246, 248);
+  height: 550px;
+}
+
+.last-banner h2 {
+  padding-top: 100px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.last-banner-block {
+  display: flex;
+  justify-content: center;
+}
+
+.last-banner-block-element {
+  width: 350px;
+  height: 200px;
+  background-color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav-icon {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* style for footer */
+footer {
+  background-color: rgb(36, 40, 48);
+  height: 122px;
+}
+
+footer p {
+  color: #a1a9b0;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+footer span {
+  color: white;
+  font-size: 18px;
+}
+/* style for header */
+header {
+  background-color: rgb(36, 40, 48);
+  height: 400px;
+  animation: nav 1s normal;
+  display: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ul li {
+  text-align: left;
+  width: 1300px;
+  margin-left: 300px;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.42857143;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
