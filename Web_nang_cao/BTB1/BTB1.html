@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @media only screen and (max-width: 490px) {
+        .container {
+          background-color: rgb(252, 192, 152);
+          width: 490px;
+          height: 2330px;
+        }
+        .row{
+            display: block;
+            padding-top: 15px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .row-1-element:first-child{
+            margin-top: 0;
+        }
+
+        .row-1-element, .row-2-element{
+            width: 460px;
+        }
+      }
+    </style>
+    <title>Responsive</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="row-1-element"></div>
+          <div class="row-1-element"></div>
+          <div class="row-1-element"></div>
+        </div>
+        <div class="row">
+          <div class="row-2-element"></div>
+          <div class="row-2-element"></div>
+          <div class="row-2-element"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

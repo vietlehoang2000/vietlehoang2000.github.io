@@ -1,0 +1,31 @@
+*{
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.container{
+    background-color: rgb(134, 240, 134);
+    width: 1500px;
+    height: 800px;
+}
+
+.row{
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row-1-element{
+    margin-top: 30px;
+    background-color: rgb(114, 114, 248);
+    width: calc((100% - 120px)/3);
+    height: 355px;
+}
+
+.row-2-element{
+    margin-top: 30px;
+    background-color: rgb(114, 114, 248);
+    width: calc((100% - 120px)/3);
+    height: 355px;
+}
