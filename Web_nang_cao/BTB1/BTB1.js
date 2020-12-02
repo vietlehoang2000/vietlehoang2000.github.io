@@ -90,16 +90,17 @@ find_target_on_string(string, target);
 
 //  Bài 5: Cho 1 mảng chỉ chứa các phần tử có kiểu dữ liệu number, string và boolean. Hãy kiểm tra xem trong mảng đó có phần tử nào bị lặp lại hay không (xuất hiện 2 lần trở lên). Kết quả trả về true (nếu lặp) hoặc false (nếu không lặp).
 
-let array = ["hi", 2, true];
+let array = ["hi", 2, true, false, 2];
 
 function Find_duplicate(array) {
-  for (i = 0; i < array.length; i++) {
-    for (x = 0; x < array.length; x++) {
-      if (array[x] == array[i])
-        return false;
+  for (let i = 0; i < array.length; i++) {
+    for (let x = i + 1; x < array.length; x++) {
+      if (typeof array[i] == typeof array[x] && array[i] == array[x]) {
+        return true;
+      }
     }
   }
-  return true;   
+  return false;
 }
 
 Find_duplicate(array);
