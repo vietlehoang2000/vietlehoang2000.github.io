@@ -88,9 +88,34 @@ header {
   display: none;
 }
 
-#menu-open{
-    display: none;
-  }
+#menu-open {
+  display: none;
+}
+
+footer {
+  height: 50px;
+  background-color: silver;
+}
+
+nav {
+  height: 100%;
+}
+
+ul {
+  height: 100%;
+  margin: auto;
+  width: 25%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
 
 @media only screen and (max-width: 500px) {
   .logo {
@@ -131,16 +156,15 @@ header {
   .wrapper-menu {
     width: 100%;
     background-color: rgb(168, 247, 168);
-    display:none ;
+    display: none;
   }
 
   #menu-open:checked + header {
-  height: 180px;
-}
-  #menu-open:checked ~ * .wrapper-menu{
+    height: 180px;
+  }
+  #menu-open:checked ~ * .wrapper-menu {
     display: block;
   }
-
 
   .right-header {
     background-color: rgb(168, 247, 168);

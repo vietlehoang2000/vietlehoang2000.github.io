@@ -7,7 +7,7 @@
       @media only screen and (max-width: 490px) {
         .container {
           background-color: rgb(252, 192, 152);
-          width: 490px;
+          width: 100%;
           height: 2330px;
         }
         .row{
@@ -17,12 +17,12 @@
             padding-right: 0;
         }
 
-        .row-1-element:first-child{
+        .row-element:first-child{
             margin-top: 0;
         }
 
-        .row-1-element, .row-2-element{
-            width: 460px;
+        .row-element{
+             width: calc(100% - 30px);
         }
       }
     </style>
@@ -33,17 +33,29 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="row-1-element"></div>
-          <div class="row-1-element"></div>
-          <div class="row-1-element"></div>
+          <div class="row-element"></div>
+          <div class="row-element"></div>
+          <div class="row-element"></div>
         </div>
         <div class="row">
-          <div class="row-2-element"></div>
-          <div class="row-2-element"></div>
-          <div class="row-2-element"></div>
+          <div class="row-element"></div>
+          <div class="row-element"></div>
+          <div class="row-element"></div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://vietlehoang2000.github.io/Web_nang_cao/BTB1/BTB1.html">1</a></li>
+                <li><a href="https://vietlehoang2000.github.io/Web_nang_cao/BTB1/BTB1-2.html">2</a></li>
+                <li><a href="https://vietlehoang2000.github.io/Web_nang_cao/BTB2/BTB2-3.html">3</a></li>
+                <li><a href="https://vietlehoang2000.github.io/Web_nang_cao/BTB2/BTB2-4.html">4</a></li>
+                <li><a href="https://vietlehoang2000.github.io/Web_nang_cao/BTB2/BTB2-5.html">5</a></li>
+                <li><a href="https://vietlehoang2000.github.io/Web_nang_cao/BTB3/BTB3-6.html">6</a></li>
+                <li><a href="https://vietlehoang2000.github.io/Web_nang_cao/BTB3/BTB3-7.html">7</a></li>
+            </ul>
+        </nav>
+    </footer>
   </body>
 </html>

@@ -105,10 +105,34 @@ header {
   display: none;
 }
 
+#menu-open {
+  display: none;
+}
 
-#menu-open{
-    display: none;
-  }
+footer {
+  height: 50px;
+  background-color: silver;
+}
+
+nav {
+  height: 100%;
+}
+
+ul {
+  height: 100%;
+  margin: auto;
+  width: 25%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
 
 @media only screen and (max-width: 500px) {
   .logo {
@@ -123,7 +147,6 @@ header {
     display: inline-block;
     float: left;
     margin-top: 10px;
-    
   }
 
   .left-header {
@@ -184,25 +207,25 @@ header {
     margin-top: 0px;
   }
 
-  .container{
-      display: block;
-      height: 430px;
+  .container {
+    display: block;
+    height: 430px;
   }
-  .main-left-block , .main-right-block{
+  .main-left-block,
+  .main-right-block {
     width: calc(100% - 20px);
   }
-  .main-right-block{
-      margin-top: 10px;
+  .main-right-block {
+    margin-top: 10px;
   }
 
-
-   #menu-open:checked + header {
-  height: 210px;
-}
-  #menu-open:checked ~ * .right-header{
+  #menu-open:checked + header {
+    height: 210px;
+  }
+  #menu-open:checked ~ * .right-header {
     display: block;
   }
-  #menu-open:checked ~ * .middle-header{
-      display: block;
+  #menu-open:checked ~ * .middle-header {
+    display: block;
   }
 }

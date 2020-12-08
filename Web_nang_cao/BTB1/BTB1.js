@@ -1,7 +1,7 @@
 // Bài 1: Viết hàm chuyển đổi nhiệt độ từ độ C sang độ F, tham số truyền vào là 1 số nguyên biểu thị độ C. Ví dụ tham số truyền vào là -30 thì kết quả trả về là -22.
 
 function ConvertTemp(a) {
-  if (Number.isInteger(a) == true) console.log(`${a * 1.8 + 32}`);
+  if (Number.isInteger(a) == true) return(`${a * 1.8 + 32}`);
   else console.log("Không phải số nguyên");
 }
 
