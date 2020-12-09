@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="DOM.css">
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><button onclick="changeColor()">ChangeColor</button></li>
+        <li><button onclick="changeBgColor(`red`)">changeBgColor</button></li>
+        <li><button onclick="copyContent(`heading`, `heading2`)">copyContent</button></li>
+        <li><button onclick="changeFontSize(20)">changeFontSize</button></li>
+        <li><button onclick="increaseFontSize(`heading`)">increaseFontSize</button></li>
+        <li><button onclick="decreaseFontSize(`paragraph`)">decreaseFontSize</button></li>
+      </ul>
+    </header>
+    <main>
+      <h1 id="heading">Vivian</h1>
+      <h2 id="heading2">Vincent</h2>
+      <p id="paragraph">Viet</p>
+    </main>
+    <script src="DOM.js"></script>
+  </body>
+</html>
