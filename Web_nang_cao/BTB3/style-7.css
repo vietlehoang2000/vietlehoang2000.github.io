@@ -18,7 +18,7 @@ header {
   width: 100px;
   height: 30px;
   background-color: rgb(250, 194, 203);
-  margin-left: 10px;
+
   border: 1px solid black;
   color: white;
   font-size: 26px;
@@ -134,6 +134,11 @@ li a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  margin-left: 10px;
+}
+
 @media only screen and (max-width: 500px) {
   .logo {
     display: block;
@@ -144,15 +149,12 @@ li a {
   }
 
   .left-header-phone {
-    display: inline-block;
     float: left;
+    display: inline-block;
     margin-top: 10px;
   }
 
   .left-header {
-    margin-top: 10px;
-    margin-right: 10px;
-    float: left;
     width: 60px;
     background-color: rgb(113, 113, 247);
   }
@@ -219,13 +221,8 @@ li a {
     margin-top: 10px;
   }
 
-  #menu-open:checked + header {
-    height: 210px;
-  }
-  #menu-open:checked ~ * .right-header {
-    display: block;
-  }
-  #menu-open:checked ~ * .middle-header {
-    display: block;
+  button {
+    margin: 10px 10px 0 10px;
+    float: left;
   }
 }
