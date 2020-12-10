@@ -12,30 +12,21 @@ function changeBgColor(color) {
   document.body.style.background = color;
 }
 
-changeBgColor("red");
-changeBgColor("white");
-
 // B3 function copyContent(paragraph1, paragraph2): Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2 (tham số truyền vào là id của 2 đoạn văn hoặc thứ tự của đoạn văn).
 
 
 function copyContent(paragraph1, paragraph2) {
-  let stringHeading;
-  let stringHeading2;
-  stringHeading = document.getElementById(paragraph1).innerText;
-  stringHeading2 = document.getElementById(paragraph2).innerText;
-  document.getElementById(paragraph1).innerText = stringHeading2;
-  document.getElementById(paragraph2).innerText = stringHeading;
+  document.getElementById(paragraph1).innerText = document.getElementById(paragraph2).innerText;
 }
 
 // B4 function changeFontSize(x): Thay đổi kích thước font chữ của cả 3 đoạn văn thành x pixels (x là một số nguyên).
 
 function changeFontSize(x) {
-  document.getElementById("heading").style.fontSize = x;
-  document.getElementById("heading2").style.fontSize = x;
-  document.getElementById("paragraph").style.fontSize = x;
+  document.getElementById("heading").style.fontSize = x + "px";
+  document.getElementById("heading2").style.fontSize = x + "px";
+  document.getElementById("paragraph").style.fontSize = x +"px";
 }
 
-changeFontSize(30);
 
 // B5 function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn) lên 1 pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi hàm changeFontSize() hoặc dùng window.getComputedStyle).
 
