@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+}
+
+
+.container{
+    max-width: 1200px;
+    height: 1000px;
+    background-color: rgb(253,219,0);
+    margin: auto;
+    padding-top: 100px;
+}
+
+.cal{
+    margin: auto;
+    width: 500px;
+    height: 650px;
+    background-color: rgb(216, 224, 227);
+    border-radius: 5%;
+    position: relative;
+}
+
+.top{
+    height: 20%;
+    background-color: rgb(165, 186, 205);
+    border-radius: 5%;
+    padding-top: 20px ;
+    user-select: none;
+}
+
+.screen{
+    height: 80%;
+    width: 85%;
+    background-color: rgb(210, 220, 186);
+    margin: auto;
+    border-radius: 5%;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 15px ;
+    padding-right:15px ;
+    text-align: right;
+}
+
+.row{
+    display: flex;
+    height: 15%;
+    width: 100%;
+    margin-left: 25px ;
+}
+
+.row:first-child{
+    margin-top: 20px;
+}
+
+
+.row:first-child .normButton{
+    background-color: rgb(85, 127, 153);
+}
+
+.row:first-child .normButton:hover{
+    background-color: rgb(108, 135, 151);
+}
+
+.normButton{
+    width: 20%;
+    height: 70%;
+    background-color: rgb(121, 154, 173);
+    margin-left:10px ;
+    border-radius: 8%;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 10px ;
+    user-select: none;
+}
+
+.normButton:hover{
+    background-color: rgb(144, 164, 175); ;
+}
+
+.button0{
+    width: calc(40% + 10px);
+    height: 70%;
+    background-color: rgb(121, 154, 173);
+    margin-left:10px ;
+    border-radius: 8%;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    padding-top: 10px ;
+    user-select: none;
+}
+
+.button0:hover{
+    background-color:  rgb(139, 160, 172);;
+}
+
+.buttonLarge{
+    width: 20%;
+    height: 170%;
+    background-color: rgb(245, 172, 78);
+    margin-left:10px ;
+    border-radius: 8%;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    padding-top: 40px ;
+    user-select: none;
+}
+.buttonLarge:hover{
+    background-color: rgb(250, 197, 127);
+}
+
+#plus{
+    width: 25%;
+    height: 40px;
+    background-color: rgb(243, 47, 47);
+    position: absolute;
+    border-radius: 10%;
+    top: 610;
+    right: 200;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(228, 224, 224);
+    user-select: none;
+}
+
+#plus:hover{
+    background-color: rgb(252, 127, 127);
+}
+
+#calPlus{
+    display: none;
+}
+
+#calPlus .row{
+    margin-top: 0;
+}

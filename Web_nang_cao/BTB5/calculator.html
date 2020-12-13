@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="all.min.css" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="cal">
+                <div class="top">
+                    <div class="screen"></div>
+                </div>
+                <div class="bottom">
+                    <div class="row">
+                        <div class="normButton" onclick="deleteScr()">AC</div>
+                        <div class="normButton" onclick="removeLastChar()"><i class="fas fa-backspace" style="font-size: 35px; margin-top: 5px;margin-right: 3px; ;"></i></div>
+                        <div class="normButton" onclick="displayOnScreen(`÷`)">÷</div>
+                        <div class="normButton" onclick="displayOnScreen(`×`)">×</div>
+                    </div>
+                     <div class="row">
+                        <div class="normButton" onclick="displayOnScreen(`7`)">7</div>
+                        <div class="normButton" onclick="displayOnScreen(`8`)">8</div>
+                        <div class="normButton" onclick="displayOnScreen(`9`)">9</div>
+                        <div class="normButton" onclick="displayOnScreen(`-`)">-</div>
+                    </div>
+                     <div class="row">
+                        <div class="normButton" onclick="displayOnScreen(`4`)">4</div>
+                        <div class="normButton" onclick="displayOnScreen(`5`)">5</div>
+                        <div class="normButton" onclick="displayOnScreen(`6`)">6</div>
+                        <div class="normButton" onclick="displayOnScreen(`+`)">+</div>
+                    </div>
+                    <div class="row">
+                        <div class="normButton" onclick="displayOnScreen(`1`)">1</div>
+                        <div class="normButton" onclick="displayOnScreen(`2`)">2</div>
+                        <div class="normButton" onclick="displayOnScreen(`3`)">3</div>
+                        <div class="buttonLarge" onclick="calculate()">=</div>
+                    </div>
+                    <div class="row">
+                        <div class="button0" onclick="displayOnScreen(`0`)">0</div>
+                        <div class="normButton" onclick="displayOnScreen(`.`)">.</div>
+                    </div>
+                    <div id="plus" onclick="displayCalPlus()">Plus</div>
+                    <div id="calPlus">
+                    <div class="row">
+                        <div class="normButton" onclick="displayOnScreen(`^2`)">^2</div>
+                        <div class="normButton" onclick="displayOnScreen(`^`)">^</div>
+                        <div class="normButton" onclick="calculateFactorial()">!</div>
+                        <div class="normButton" onclick="calculateSquare()">√2</div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="all.min.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
