@@ -42,12 +42,10 @@ header {
 .row:first-child {
   padding-bottom: 15px;
 }
-.row:last-child {
-  padding-top: 15px;
-}
+
 
 .row-element:first-child {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
 .row-element {
