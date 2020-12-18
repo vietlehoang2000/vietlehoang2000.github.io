@@ -13,7 +13,7 @@ header {
 
 .headerRightBlock {
   width: 50%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .burgerMenu{
@@ -44,9 +44,10 @@ li a:hover{
 }
 
 .headerLeftBlock h1 {
-  font-family: Inconsolata-Black;
+  font-family: Inconsolata-Regular;
   font-size: 30px;
   text-align: left;
+  line-height: 24px;
 }
 
 li a{
@@ -56,7 +57,6 @@ li a{
 }
 
 body {
-  /* max-width: 1066px; */
   margin: auto;
 }
 
@@ -154,8 +154,17 @@ p{
 }
 
 h1 a{
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 a:hover{
+  color: #626262;
+  transition: 0.5s;
+}
+
+span{
     font-size: 45px;
-    font-weight: 100;
 }
 
 h3{
@@ -253,7 +262,7 @@ footer {
     display: block;
      float: left;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   
   .burgerMenu{
@@ -266,6 +275,7 @@ footer {
 
   .headerLeftBlock h1{
     text-align: center;
+    margin-top: 20px;
   }
 /* style for open nav mobile*/
 
@@ -283,7 +293,7 @@ footer {
     width: 100%;
     z-index: 1;  
     float: left;
-    margin-top: -20px;
+    margin-top: -10px;
     padding: 0;
   }
 
