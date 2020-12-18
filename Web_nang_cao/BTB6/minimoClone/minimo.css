@@ -8,7 +8,7 @@ header {
   height: 140px;
   display: flex;
   justify-content: space-between;
-  align-items: center ;
+  align-items: center;
 }
 
 .headerRightBlock {
@@ -16,7 +16,7 @@ header {
   margin-top: 15px;
 }
 
-.burgerMenu{
+.burgerMenu {
   display: none;
 }
 
@@ -38,7 +38,7 @@ li a {
   color: #626262;
 }
 
-li a:hover{
+li a:hover {
   transition: 0.5s;
   color: black;
 }
@@ -50,10 +50,10 @@ li a:hover{
   line-height: 24px;
 }
 
-li a{
-    font-family: PlayfairDisplay-Regular;
-    color: #626262;
-    font-size: 14px;
+li a {
+  font-family: PlayfairDisplay-Regular;
+  color: #626262;
+  font-size: 14px;
 }
 
 body {
@@ -82,15 +82,15 @@ body {
   margin-bottom: 130px;
 }
 
-
-.block:nth-child(1), .block:nth-child(3){
-    margin-right: 30px ;
+.block:nth-child(1),
+.block:nth-child(3) {
+  margin-right: 30px;
 }
 
-.block:nth-child(2), .block:nth-child(4){
-    margin-left: 30px ;
+.block:nth-child(2),
+.block:nth-child(4) {
+  margin-left: 30px;
 }
-
 
 .blockImg img {
   max-width: 100%;
@@ -110,100 +110,99 @@ body {
   font-size: 20px;
 }
 
-.icon:focus{
+.icon:focus {
   outline: none;
 }
 
-.buttonLoad{
-    text-align: center;
-    margin-bottom: 100px ;
+.buttonLoad {
+  text-align: center;
+  margin-bottom: 100px;
 }
-.inputBlock{
+.inputBlock {
   max-width: 25%;
-  border-bottom: 1px solid #626262  ;
+  border-bottom: 1px solid #626262;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
-input{
-    background-color:  #f0f0f0;
-    border: none;
-    width: 80%;
-    height: 30px;
-    padding-top: 15px ;
-    padding-left: 10px;
+input {
+  background-color: #f0f0f0;
+  border: none;
+  width: 80%;
+  height: 30px;
+  padding-top: 15px;
+  padding-left: 10px;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
-.iconLoad:hover{
-  background-color:  #f0f0f0;
+.iconLoad:hover {
+  background-color: #f0f0f0;
   transition: 0.5s;
 }
 
-
 /* style for font */
-p{
-    font-family: PlayfairDisplay-Regular;
-    font-size: 14px;
-    font-weight: regular;
-    color: #626262;
+p {
+  font-family: PlayfairDisplay-Regular;
+  font-size: 14px;
+  font-weight: regular;
+  color: #626262;
 }
 
-h1 a{
+h1 a {
   text-decoration: none;
   color: #000000;
 }
 
-h1 a:hover{
+h1 a:hover {
   color: #626262;
   transition: 0.5s;
 }
 
-span{
-    font-size: 45px;
+span {
+  font-size: 45px;
 }
 
-h3{
-    font-family: Ubuntu-Light;
-    font-size: 14px;
-    color: #b4ad9e;
-    margin-bottom: 30px;
-    margin-top: 30px;
+h3 {
+  font-family: Ubuntu-Light;
+  font-size: 14px;
+  color: #b4ad9e;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-h2{
-    font-family: PlayfairDisplay-Regular;
-    font-size: 30px;
-    color: #626262;
-    margin-bottom: 40px ;
+h2 {
+  font-family: PlayfairDisplay-Regular;
+  font-size: 30px;
+  color: #626262;
+  margin-bottom: 40px;
 }
 
-.iconLoad{
-    font-family: PlayfairDisplay-Regular;
-    font-size: 20px;
-    color: #626262;
-    border: 1px solid #626262;
-    background-color: white;
+.iconLoad {
+  font-family: PlayfairDisplay-Regular;
+  font-size: 20px;
+  color: #626262;
+  border: 1px solid #626262;
+  background-color: white;
 }
 
-.signBlockHeading{
-    font-family: PlayfairDisplay-Regular;
-    font-size: 30px;
-    color: #333333;
+.signBlockHeading {
+  font-family: PlayfairDisplay-Regular;
+  font-size: 30px;
+  color: #333333;
 }
 
-input{
-    font-family: PlayfairDisplay-Regular;
-    font-size: 14px;
-    font-weight: regular;
-    color: #626262;
+input {
+  font-family: PlayfairDisplay-Regular;
+  font-size: 14px;
+  font-weight: regular;
+  color: #626262;
 }
 
-.leftBlock a{
+.leftBlock a {
   font-family: PlayfairDisplay-Regular;
   font-size: 14px;
   color: #000000;
@@ -211,13 +210,12 @@ input{
   margin-right: 15px;
 }
 
-.leftBlock a:hover{
+.leftBlock a:hover {
   color: #626262;
   transition: 0.5s;
 }
 
-
-.rightBlock a{
+.rightBlock a {
   font-family: PlayfairDisplay-Regular;
   font-size: 14px;
   color: #000000;
@@ -225,8 +223,7 @@ input{
   margin-right: 20px;
 }
 
-
-.rightBlock a:hover{
+.rightBlock a:hover {
   color: #626262;
   transition: 0.5s;
 }
@@ -234,18 +231,18 @@ input{
 footer {
   width: 100%;
   height: 100px;
-  background-color:#f0f0f0;
+  background-color: #f0f0f0;
 }
 
-.wrapFooter{
+.wrapFooter {
   height: 100px;
   display: flex;
   justify-content: space-between;
-  background-color:#f0f0f0;
+  background-color: #f0f0f0;
   align-items: center;
-  max-width:900px; margin: auto;
+  max-width: 900px;
+  margin: auto;
 }
-
 
 .leftBlock {
   display: flex;
@@ -253,64 +250,63 @@ footer {
 }
 
 @media only screen and (max-width: 450px) {
-
   /* style for burger menu */
-  .headerRightBlock{
+  .headerRightBlock {
     display: block;
   }
-  .burgerMenu{
+  .burgerMenu {
     display: block;
-     float: left;
+    float: left;
     font-size: 25px;
     margin-top: 5px;
   }
-  
-  .burgerMenu{
-    margin-left: 10px; 
+
+  .burgerMenu {
+    margin-left: 10px;
   }
 
-  .burgerMenu button{
+  .burgerMenu button {
     border: none;
   }
 
-  .headerLeftBlock h1{
+  .headerLeftBlock h1 {
     text-align: center;
     margin-top: 20px;
   }
-/* style for open nav mobile*/
+  /* style for open nav mobile*/
 
-  header{
+  header {
     display: block;
     margin: auto;
   }
-  
-  .headerRightBlock{
+
+  .headerRightBlock {
     width: 100%;
   }
 
-  ul{
+  ul {
     display: block;
     width: 100%;
-    z-index: 1;  
+    z-index: 1;
     float: left;
     margin-top: -10px;
     padding: 0;
   }
 
-  li{
+  li {
     width: 100%;
   }
 
-  li:hover{
+  li:hover {
     background-color: #f0f0f0;
     transition: 0.5s;
   }
 
-  li a{
-    margin-left: 10px ;
+  li a {
+    margin-left: 10px;
   }
 
-  nav{
+  nav {
     width: 100%;
   }
   /* style for body mobile*/
@@ -321,36 +317,37 @@ footer {
     max-width: 100%;
   }
 
-  .block:nth-child(1), .block:nth-child(3){
-    margin-right: 0px ;
-}
+  .block:nth-child(1),
+  .block:nth-child(3) {
+    margin-right: 0px;
+  }
 
-.block:nth-child(2), .block:nth-child(4){
-    margin-left: 0px ;
-}
+  .block:nth-child(2),
+  .block:nth-child(4) {
+    margin-left: 0px;
+  }
 
-.inputBlock{
-  max-width: 70% ;
-}
+  .inputBlock {
+    max-width: 70%;
+  }
 
-.inputBlock input{
-  width: 100%;
-}
+  .inputBlock input {
+    width: 100%;
+  }
 
   /* style for footer mobile */
 
-  .wrapFooter{
+  .wrapFooter {
     max-width: 100%;
     display: block;
   }
-  .leftBlock{
+  .leftBlock {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  .rightBlock{
+  .rightBlock {
     text-align: center;
   }
-  
 }
