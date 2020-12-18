@@ -16,6 +16,10 @@ header {
   margin-top: 20px;
 }
 
+.burgerMenu{
+  display: none;
+}
+
 nav {
   max-width: 100%;
 }
@@ -31,6 +35,11 @@ ul li {
 
 li a {
   text-decoration: none;
+  color: #626262;
+}
+
+li a:hover{
+  transition: 0.5s;
   color: black;
 }
 
@@ -47,7 +56,7 @@ li a{
 }
 
 body {
-  max-width: 1066px;
+  /* max-width: 1066px; */
   margin: auto;
 }
 
@@ -60,8 +69,6 @@ body {
   max-width: 900px;
   margin: auto;
 }
-
-
 
 .wrapBlock {
   max-width: 900px;
@@ -103,12 +110,16 @@ body {
   font-size: 20px;
 }
 
+.icon:focus{
+  outline: none;
+}
+
 .buttonLoad{
     text-align: center;
     margin-bottom: 100px ;
 }
 .inputBlock{
-  max-width: 29%;
+  max-width: 25%;
   border-bottom: 1px solid #626262  ;
   margin: auto;
   display: flex;
@@ -118,8 +129,21 @@ body {
 input{
     background-color:  #f0f0f0;
     border: none;
-    
+    width: 80%;
+    height: 30px;
+    padding-top: 15px ;
+    padding-left: 10px;
 }
+
+input:focus{
+  outline: none;
+}
+
+.iconLoad:hover{
+  background-color:  #f0f0f0;
+  transition: 0.5s;
+}
+
 
 /* style for font */
 p{
@@ -177,9 +201,12 @@ input{
   text-decoration: none;
   margin-right: 15px;
 }
-.leftBlock a:first-child{
-  margin-left: 150px ;
+
+.leftBlock a:hover{
+  color: #626262;
+  transition: 0.5s;
 }
+
 
 .rightBlock a{
   font-family: PlayfairDisplay-Regular;
@@ -189,25 +216,94 @@ input{
   margin-right: 20px;
 }
 
-.rightBlock a:last-child{
-  margin-right: 70px;
+
+.rightBlock a:hover{
+  color: #626262;
+  transition: 0.5s;
 }
 /* style for footer */
 footer {
+  width: 100%;
+  height: 100px;
+  background-color:#f0f0f0;
+}
+
+.wrapFooter{
   height: 100px;
   display: flex;
   justify-content: space-between;
   background-color:#f0f0f0;
   align-items: center;
+  max-width:900px; margin: auto;
 }
+
 
 .leftBlock {
   display: flex;
   justify-content: space-between;
-  
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 450px) {
+
+  /* style for burger menu */
+  .headerRightBlock{
+    display: block;
+  }
+  .burgerMenu{
+    display: block;
+     float: left;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  
+  .burgerMenu{
+    margin-left: 10px; 
+  }
+
+  .burgerMenu button{
+    border: none;
+  }
+
+  .headerLeftBlock h1{
+    text-align: center;
+  }
+/* style for open nav mobile*/
+
+  header{
+    display: block;
+    margin: auto;
+  }
+  
+  .headerRightBlock{
+    width: 100%;
+  }
+
+  ul{
+    display: block;
+    width: 100%;
+    z-index: 1;  
+    float: left;
+    margin-top: -20px;
+    padding: 0;
+  }
+
+  li{
+    width: 100%;
+  }
+
+  li:hover{
+    background-color: #f0f0f0;
+    transition: 0.5s;
+  }
+
+  li a{
+    margin-left: 10px ;
+  }
+
+  nav{
+    width: 100%;
+  }
+  /* style for body mobile*/
   .wrapBlock {
     display: block;
   }
@@ -223,27 +319,28 @@ footer {
     margin-left: 0px ;
 }
 
-  footer{
+.inputBlock{
+  max-width: 70% ;
+}
+
+.inputBlock input{
+  width: 100%;
+}
+
+  /* style for footer mobile */
+
+  .wrapFooter{
+    max-width: 100%;
     display: block;
   }
-
- 
   .leftBlock{
-    display: inline-block;
-    margin: auto;
+    display: block;
     width: 100%;
+    text-align: center;
   }
-  .leftBlock a:first-child{
-  margin-left: 30% ;
-}
 
   .rightBlock{
-    display: inline-block;
-    width: 100%;
-    margin: auto;
+    text-align: center;
   }
-
-  .rightBlock a:first-child{
-  margin-left: 30%;
-}
+  
 }
