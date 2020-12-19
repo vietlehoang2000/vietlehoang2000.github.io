@@ -3,12 +3,21 @@
   padding: 0;
 }
 
+/* reset browser css*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup,
+ var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, 
+header, hgroup, menu, nav, section, summary, time, mark, audio, video
+ { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
 header {
   max-width: 100%;
   height: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px;
 }
 
 .headerRightBlock {
@@ -41,13 +50,6 @@ li a {
 li a:hover {
   transition: 0.5s;
   color: black;
-}
-
-.headerLeftBlock h1 {
-  font-family: Inconsolata-Regular;
-  font-size: 30px;
-  text-align: left;
-  line-height: 24px;
 }
 
 li a {
@@ -93,7 +95,7 @@ body {
 }
 
 .blockImg img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .signBlock {
@@ -118,13 +120,24 @@ body {
   text-align: center;
   margin-bottom: 100px;
 }
+
+.iconLoad:focus{
+  outline: none;
+
+}
 .inputBlock {
-  max-width: 25%;
-  border-bottom: 1px solid #626262;
+  width: 100%;
   margin: auto;
+}
+
+.inputBlockWrapper{
+  width: 400px;
+  border-bottom: 1px solid #626262;
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
+
 
 input {
   background-color: #f0f0f0;
@@ -145,6 +158,23 @@ input:focus {
 }
 
 /* style for font */
+
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: URL('FONTS/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'PlayfairDisplay-Regular';
+  src: URL('FONTS/Playfair_Display/PlayfairDisplay-Regular.ttf') ;
+}
+
+@font-face{
+  font-family: 'Ubuntu-Light';
+  src: URL('FONTS/Ubuntu/Ubuntu-Light.ttf') ;
+}
+
+
 p {
   font-family: PlayfairDisplay-Regular;
   font-size: 14px;
@@ -152,7 +182,16 @@ p {
   color: #626262;
 }
 
+.headerLeftBlock h1 {
+  font-family: "Inconsolata-Regular";
+  font-size: 30px;
+  text-align: left;
+  line-height: 24px;
+  letter-spacing: 7px;
+}
+
 h1 a {
+  
   text-decoration: none;
   color: #000000;
 }
@@ -163,7 +202,9 @@ h1 a:hover {
 }
 
 span {
-  font-size: 45px;
+  font-family: "Inconsolata-Regular";
+  font-size: 30px;
+  font-weight: 100;
 }
 
 h3 {
@@ -174,11 +215,25 @@ h3 {
   margin-top: 30px;
 }
 
+h3:hover{
+  color: #333333;
+  transition: 0.5s;
+}
+
 h2 {
   font-family: PlayfairDisplay-Regular;
   font-size: 30px;
   color: #626262;
   margin-bottom: 40px;
+}
+
+h2:hover{
+  color: #333333;
+  transition: 0.5s;
+}
+
+a{
+  text-decoration: none;
 }
 
 .iconLoad {
@@ -249,7 +304,7 @@ footer {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 510px) {
   /* style for burger menu */
   .headerRightBlock {
     display: block;
@@ -258,7 +313,7 @@ footer {
     display: block;
     float: left;
     font-size: 25px;
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
   .burgerMenu {
@@ -266,6 +321,11 @@ footer {
   }
 
   .burgerMenu button {
+    border: none;
+  }
+
+  .burgerMenu button:focus{
+    outline: none;
     border: none;
   }
 
@@ -282,6 +342,7 @@ footer {
 
   .headerRightBlock {
     width: 100%;
+    margin-top: 20px;
   }
 
   ul {
@@ -327,23 +388,27 @@ footer {
     margin-left: 0px;
   }
 
-  .inputBlock {
-    max-width: 70%;
-  }
 
   .inputBlock input {
     width: 100%;
+  }
+  
+  .inputBlockWrapper{
+  max-width: 70%;
   }
 
   /* style for footer mobile */
 
   .wrapFooter {
     max-width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-evenly;
   }
   .leftBlock {
     display: block;
-    width: 100%;
+ 
     text-align: center;
   }
 
