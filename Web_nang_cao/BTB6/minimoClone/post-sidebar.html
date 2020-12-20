@@ -1,12 +1,12 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>post-full-width</title>
-    <link rel="stylesheet" href="all.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post-sidebar</title>
+      <link rel="stylesheet" href="all.min.css" />
     <link rel="stylesheet" href="minimo.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header style="max-width:912px; margin: auto">
       <div class="burgerMenu">
         <button onclick="openNav()" style="font-size: 25px;"><i class="fas fa-bars"></i></button>
@@ -28,10 +28,11 @@
       </div>
     </header>
     <main>
-      <div class="banner1" style="max-width: 1066px; margin: auto">
+        <div class="banner1" style="max-width: 1066px; margin: auto">
         <a href="#"><img src="img/firstBanner.png" alt="" /></a>
       </div>
-      <div class="container" style="padding: 12px">
+      <div class="sidebarWrapper">
+      <div class="leftContainer" style="padding: 12px">
         <div class="imageDes">
           <h3>PHOTODIARY</h3>
           <h2>The perfect weekend getaway</h2>
@@ -109,6 +110,27 @@
           <a href="#"><i class="fab fa-pinterest"></i></a>
         </div>
       </div>
+      <div class="rightContainer">
+          <div class="bannerAva"><img src="img/bannerSlot1.png" alt=""></div>
+          <h2>About me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odio quod praesentium qui debitis esse quibusdam incidunt facere consectetur labore ad, vel quas alias repellat sint vero expedita assumenda recusandae.</p>
+        <div class="rightBlock" style="text-align:left; margin-top: 20px; margin-bottom: 50px;">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <h3>TOP POSTS</h3>
+           <ul>
+               <a href=""><li><h5>A day exploring the Alps</h5></li></a>
+               <p>24 comments</p>
+               <a href=""><li><h5>American dream</h5></li></a>
+               <p>19 comments</p>
+               <a href=""><li><h5>Cold winter days</h5></li></a>
+               <p>15 comments</p>
+           </ul>
+           <div class="bannerAva"><img src="img/bannerSlot2.png" alt=""></div>
+    </div>
+      </div>
       <div class="signBlock" style="padding-top: 20px; margin-bottom: 0px ;">
         <div class="signBlockWrapper">
           <a href="#"><h3>YOU MAY ALSO LIKE</h3></a>
@@ -159,7 +181,7 @@
         </div>
       </div>
     </main>
-    <footer>
+     <footer>
       <div class="wrapFooter">
         <div class="leftBlock">
           <a href="#">Terms and conditions</a>
@@ -175,5 +197,5 @@
     </footer>
     <script src="all.min.js"></script>
     <script src="minimo.js"></script>
-  </body>
+</body>
 </html>

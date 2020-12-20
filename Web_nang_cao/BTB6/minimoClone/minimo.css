@@ -38,7 +38,7 @@ ul {
   justify-content: space-between;
 }
 
-ul li {
+header ul li {
   list-style: none;
 }
 
@@ -100,7 +100,7 @@ body {
 
 .signBlock {
   max-width: 100%;
-  height: 287px;
+  height: 400px;
   background-color: #f0f0f0;
   text-align: center;
   padding-top: 70px;
@@ -174,11 +174,20 @@ input:focus {
   src: URL('FONTS/Ubuntu/Ubuntu-Light.ttf') ;
 }
 
+@font-face{
+  font-family: 'PlayfairDisplay-Italic';
+  src: URL('FONTS/Playfair_Display/PlayfairDisplay-Italic.ttf') ;
+}
+
+@font-face{
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('FONTS/Playfair_Display/PlayfairDisplay-Bold.ttf');
+}
+
 
 p {
   font-family: PlayfairDisplay-Regular;
   font-size: 14px;
-  font-weight: regular;
   color: #626262;
 }
 
@@ -201,7 +210,7 @@ h1 a:hover {
   transition: 0.5s;
 }
 
-span {
+h1 span {
   font-family: "Inconsolata-Regular";
   font-size: 30px;
   font-weight: 100;
@@ -244,6 +253,18 @@ a{
   background-color: white;
 }
 
+h4{
+  font-family: PlayfairDisplay-Bold;
+  font-size: 16px;
+  color: #333333;
+}
+
+h5{
+  font-family: PlayfairDisplay-Regular;
+  color: #333333;
+  font-size: 16px;
+}
+
 .signBlockHeading {
   font-family: PlayfairDisplay-Regular;
   font-size: 30px;
@@ -282,6 +303,8 @@ input {
   color: #626262;
   transition: 0.5s;
 }
+
+
 /* style for footer */
 footer {
   width: 100%;
@@ -304,11 +327,144 @@ footer {
   justify-content: space-between;
 }
 
+
+/* for post-full-width page */
+.containerImg img{
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.imgDes{
+  font-family: PlayfairDisplay-Italic;
+  padding: 25px;
+  font-size: 14px;
+  color: #626262;
+}
+
+.signBlockWrapper{
+  max-width: 900px;
+  height: 100%;
+  margin: auto;
+  padding: 12px;
+}
+.signBlockWrapper a h3{
+  text-align: left;
+}
+
+p span{
+  font-family: PlayfairDisplay-Bold;
+}
+
+.signBlockBanner{
+  display: flex;
+  justify-content: space-between;
+}
+.blockBanner{
+  max-width: 30%;
+}
+.blockBanner a h2{
+  font-size: 20px;
+  text-align: left;
+}
+.blockBanner img{
+  max-width: 100%;
+}
+
+.comment{
+  display: flex;
+  margin-top: 30px ;
+}
+
+.commentAva{
+  max-width: 20%;
+  margin-right: 40px ;
+  margin-top: 10px;
+}
+
+.commentAvaWord{
+  max-width: 20%;
+  margin-right: 40px ;
+  margin-top: 10px;
+  background-color: rgba(54, 134, 54, 0.2);
+  width: 70px;
+  height: 73px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.commentAvaWord h4{
+  margin-top: 23px;
+}
+
+.commentSec{
+  width: 80%;
+}
+.commentSec h4{
+   margin-bottom: 10px;
+}
+
+.commentSec input{
+  background-color: white;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#comment{
+  width: 100%;
+  border: 1px solid black;
+  padding-left: 20px;
+  height: 60%;
+  border-radius: 5px;
+}
+
+.container .rightBlock a{
+  font-size: 14px;
+}
+
+/* style for post-sidebar page */
+.sidebarWrapper{
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+}
+
+.leftContainer{
+  max-width: 70%;
+}
+.rightContainer{
+  max-width: 30%;
+}
+
+main ul{
+  display: block;
+}
+
+main ul li{
+    color: #626262;
+    margin-left: 14px;
+}
+
+.bannerAva{
+  margin-top: 40px;
+}
+
+.bannerAva img{
+  max-width: 100%;
+}
+
+.rightContainer{
+  padding:12px;
+}
+
 @media only screen and (max-width: 510px) {
   /* style for burger menu */
   .headerRightBlock {
     display: block;
   }
+
   .burgerMenu {
     display: block;
     float: left;
@@ -415,4 +571,20 @@ footer {
   .rightBlock {
     text-align: center;
   }
+  /* mobile for post-full-width page */
+  .signBlockBanner{
+    display: block;
+    background-color: #f0f0f0;
+  }
+
+  .signBlock{
+    height: 1200px;
+  }
+  .blockBanner{
+    max-width: 100%;
+  }
+
+  .blockBanner a h2{
+  text-align: center;
+}
 }
