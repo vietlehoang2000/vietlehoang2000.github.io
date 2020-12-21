@@ -169,8 +169,8 @@ body {
 }
 
 .signBlock {
+  background-size:cover;
   max-width: 100%;
-  height: 400px;
   background-color: #f0f0f0;
   text-align: center;
   padding-top: 70px;
@@ -180,10 +180,6 @@ body {
 .icon {
   border: none;
   font-size: 20px;
-}
-
-.icon:focus {
-  outline: none;
 }
 
 .buttonLoad {
@@ -331,6 +327,10 @@ h5 {
   font-size: 16px;
 }
 
+h5:hover{
+  color: #626262;
+}
+
 .signBlockHeading {
   font-family: PlayfairDisplay-Regular;
   font-size: 30px;
@@ -407,7 +407,6 @@ footer {
 
 .signBlockWrapper {
   max-width: 900px;
-  height: 100%;
   margin: auto;
   padding: 12px;
 }
@@ -429,6 +428,7 @@ p span {
 .blockBanner a h2 {
   font-size: 20px;
   text-align: left;
+  margin-top: 20px;
 }
 .blockBanner img {
   max-width: 100%;
@@ -478,14 +478,34 @@ p span {
 
 #comment {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #b4ad9e;
   padding-left: 20px;
-  height: 50px;
+  height: 70px;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .container .rightBlock a {
   font-size: 14px;
+}
+
+.sidebarWrapper .rightBlock a{
+  color: rgb(179, 174, 154); 
+  font-size: 16px;
+}
+
+.sidebarWrapper .rightBlock a:hover{
+ color: #333333;
+  transition: 0.5s;
+}
+#iconRightBlock a{
+  color: rgb(179, 174, 154);
+    font-size: 16px;
+}
+
+#iconRightBlock a:hover{
+  color: #333333;
+  transition: 0.5s;
 }
 
 /* style for post-sidebar page */
@@ -526,6 +546,24 @@ main ul li {
 .rightContainer ul p {
   margin-left: 15px;
 }
+
+
+#commentRightBlock a:first-child,#commentRightBlock a:nth-child(2){
+  color: rgb(201, 201, 201);
+}
+
+#commentRightBlock a:first-child:hover,#commentRightBlock a:nth-child(2):hover{
+  color: #333333;
+}
+
+#commentRightBlock{
+  text-align: right; 
+  margin-top: 30px; 
+  margin-bottom: 50px;
+  width: 95%;
+}
+
+
 @media only screen and (max-width: 510px) {
   /* style for burger menu */
   .headerRightBlock {
@@ -643,14 +681,31 @@ main ul li {
     background-color: #f0f0f0;
   }
 
-  .signBlock {
-    height: 1200px;
-  }
   .blockBanner {
     max-width: 100%;
   }
 
   .blockBanner a h2 {
     text-align: center;
+  }
+  /* mobile for post-sidebar */
+  .sidebarWrapper{
+    display: block;
+  }
+  .leftContainer{
+    max-width: 100%;
+  }
+
+  .rightContainer{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .rightContainer .rightBlock{
+    text-align: right !important;
+  }
+
+  .rightContainer ul{
+    list-style: none;
   }
 }

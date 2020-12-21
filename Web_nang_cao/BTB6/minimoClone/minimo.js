@@ -20,5 +20,4 @@ function checkScreen() {
     }
 }
 
-
 document.body.onresize = function () { checkScreen() };
