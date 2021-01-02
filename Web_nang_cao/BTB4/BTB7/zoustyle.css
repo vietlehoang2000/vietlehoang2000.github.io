@@ -1,0 +1,1097 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+}
+
+/* reset browser css*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  background: #f5f5f5;
+}
+
+header {
+  padding: 12px;
+  max-width: 1440px;
+  margin-bottom: 100px;
+}
+
+#background {
+  background-image: url("img/innerbg.png");
+  width: 100%;
+  height: 3915px;
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  top: 900;
+}
+
+#footerBackground {
+  background-image: url("img/footerbg.png");
+  width: 100%;
+  height: 1366px;
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  top: 3500;
+}
+
+.topLeaf {
+  background-image: url("img/topleaf.png");
+  position: absolute;
+  width: 100%;
+  height: 750px;
+  z-index: -1;
+  left: -460;
+  top: 600;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.bottomLeaf {
+  background-image: url("img/bottomleaf.png");
+  width: 100%;
+  height: 330px;
+  position: absolute;
+  z-index: -2;
+  top: 980;
+  left: -50;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.footerLeaf {
+  background-image: url("img/footerleaf.png");
+  position: absolute;
+  width: 30%;
+  height: 200px;
+  right: 000;
+  top: 5200;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* for header items */
+.headerItems {
+  max-width: 1224px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  padding: 12px;
+}
+
+.burgerMenu {
+  margin-top: 55px;
+  font-size: 30px;
+  display: none;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.logoZou {
+  margin-top: 50px;
+  width: 20%;
+  text-align: center;
+}
+
+.menu {
+  margin-top: 60px;
+  width: 60%;
+}
+
+.menu nav {
+  width: 100%;
+}
+
+.menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu ul a:last-child {
+  display: none;
+}
+.buttonSignUp a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.buttonSign button {
+  margin-top: 40px;
+  width: 130px;
+  height: 50px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttonSign button:hover {
+  filter: drop-shadow(0px 13px 20px rgba(226, 233, 226, 0.411));
+  transition: 0.5s;
+}
+
+.buttonSignUp button {
+  margin-top: 40px;
+  width: 130px;
+  height: 50px;
+  background: none;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: #eeeeee;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* style for header banner */
+
+.workersImgWrapper {
+  max-width: 660px;
+  max-height: 790px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.workersImgWrapper img {
+  width: 100%;
+  height: auto;
+}
+
+/* style for body */
+
+.container {
+  max-width: 1224px;
+  margin: auto;
+  padding: 12px;
+}
+
+.firstBanner {
+  max-width: 460px;
+}
+
+.wordBanner {
+  text-align: center;
+  margin-top: 245px;
+}
+
+.wordBanner p {
+  width: 47%;
+  margin: auto;
+}
+
+.blockWrapper {
+  display: flex;
+  margin: auto;
+  max-width: 1056px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.block {
+  max-width: 312px;
+  background: #ffffff;
+  box-shadow: -1px 13px 20px #f0f2f4;
+  border-radius: 5px;
+  height: 328px;
+  padding: 50px;
+  padding-top: 40px;
+}
+
+.block h4 {
+  margin-top: 20px;
+}
+
+.blockImg {
+  margin-bottom: 20px;
+}
+
+.wordBanner2 {
+  max-width: 1056px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.blockBusinessWrapper {
+  max-width: 1056px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftBlock {
+  width: calc(50% - 15px);
+  max-height: 416px;
+  margin-top: 50px;
+  background-image: url("img/shortterm.png");
+  border-radius: 5px;
+}
+
+.leftBlockWrapper {
+  max-width: 70%;
+  margin: auto;
+  position: relative;
+  top: -420;
+}
+
+.leftBlockMask {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(97, 118, 127, 0.0001) 0%,
+    #324148 100%
+  );
+  border-radius: 5px;
+  position: relative;
+}
+
+.rightBlockMask {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(97, 118, 127, 0.0001) 0%,
+    #324148 100%
+  );
+  border-radius: 5px;
+  position: relative;
+}
+
+.leftBlockWrapper h5,
+.rightBlockWrapper h5 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.leftBlockWrapper h3,
+.rightBlockWrapper h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.leftBlockWrapper h4,
+.rightBlockWrapper h4 {
+  width: 70%;
+}
+
+.rightBlock {
+  width: calc(50% - 15px);
+  height: 416px;
+  margin-top: 50px;
+  background-image: url("img/longterm.png");
+  border-radius: 5px;
+}
+
+.rightBlockWrapper {
+  max-width: 70%;
+  margin: auto;
+  position: relative;
+  top: -420;
+}
+
+.buttonBlock button {
+  width: 60%;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+.buttonBlock button:hover {
+  filter: drop-shadow(0px 13px 20px rgba(226, 233, 226, 0.411));
+  transition: 0.5s;
+}
+
+.lineRec {
+  width: 56px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+.mainBanner {
+  background-image: url("img/banner2.png");
+  margin-top: 100px;
+  max-width: 100%;
+  height: 720px;
+}
+
+.stepSelectors {
+  display: flex;
+  justify-content: space-between;
+  max-width: 53%;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+.selectorsBLock {
+  background: #66bb6a;
+  border: 2px solid #b3dcb6;
+  width: 72px;
+  height: 72px;
+  text-align: center;
+  border-radius: 50px;
+  font-family: chivolight;
+  font-size: 18px;
+  line-height: 21px;
+  color: #d1ead3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.innerLine {
+  background: #a5d6a7;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 35;
+  z-index: 0;
+}
+
+.mainBannerWrapper {
+  max-width: 53%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.mainBannerLeft {
+  width: 45%;
+}
+
+.mainBannerRight {
+  width: 55%;
+}
+
+.wordBanner3 {
+  background-image: url("img/sliderImg.png");
+  background-repeat: no-repeat;
+  max-width: 1056px;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.wordBanner3 h1 {
+  width: 50%;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.sliderBlock {
+  max-width: 420px;
+  height: 296px;
+  background: #ffffff;
+  box-shadow: -1px 13px 20px #f0f2f4;
+  border-radius: 5px;
+  margin-right: 20px;
+  position: relative;
+}
+.slick-center .overlay {
+  display: none;
+}
+.overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.0001) 0%,
+    #ffffff 60.76%
+  );
+  border-radius: 5px;
+  position: absolute;
+}
+
+.uAvatar {
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 3px 20px;
+  border-radius: 50px;
+}
+
+.uAvatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.uWrapper {
+  width: 70%;
+  margin-left: 20px;
+}
+
+.sliderWrapper {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+.arrowWrapper {
+  max-width: 1056px;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  margin-top: 50px;
+  padding: 12px;
+}
+
+.prevArrow,
+.nextArrow {
+  background: #ffffff;
+  box-shadow: -1px 13px 20px #f0f2f4;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: 200;
+  color: #8aa1ac;
+  padding-top: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+  background: #66bb6a;
+  box-shadow: 0px 25px 25px rgba(118, 196, 125, 0.314538);
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: 200;
+  color: #b3dcb6;
+  padding-top: 16px;
+}
+
+/* .nextArrow{
+   background: #66BB6A;
+  box-shadow: 0px 25px 25px rgba(118, 196, 125, 0.314538);
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: 200;
+  color: #B3DCB6;
+  padding-top: 16px;
+} */
+
+.headersliderBlock {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wordBanner4 {
+  max-width: 1056px;
+  height: 296px;
+  margin: auto;
+  margin-top: 200px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: -1px 25px 20px #f2f2f2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutBanner {
+  max-width: 1056px;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoAboutBLock {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockItem {
+  width: 30%;
+  text-align: left;
+}
+
+.blockItem h4:hover,
+.blockItem h5:hover {
+  color: #66bb6a;
+  transition: 0.5s;
+}
+
+.contactAboutBlock h4:hover,
+.contactAboutBlock h5:hover,
+.contactAboutBlock h3:hover {
+  color: #b3f3b6;
+  transition: 0.5s;
+}
+
+.contactAboutBlock {
+  width: 280px;
+  height: 258px;
+  background: #66bb6a;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contactAboutBlockWrapper {
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+/* style for footer */
+.footerWrapper {
+  max-width: 1056px;
+  margin: auto;
+  max-height: 150px;
+  padding: 12px;
+}
+
+.footerBanner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* style for button */
+
+.investButton button {
+  filter: drop-shadow(0px 13px 20px rgba(118, 196, 125, 0.411204));
+  background: #66bb6a;
+  border-radius: 5px;
+  text-align: center;
+  width: 145px;
+  height: 50px;
+  border: none;
+  margin-top: 55px;
+}
+
+button p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* style for font */
+
+@font-face {
+  font-family: "chivobold";
+  src: URL("font/Chivo-Bold.ttf");
+}
+@font-face {
+  font-family: "chivoregular";
+  src: URL("font/Chivo-Regular.ttf");
+}
+@font-face {
+  font-family: "chivolight";
+  src: url("font/Chivo-Light.ttf");
+}
+
+h1 {
+  font-family: chivobold;
+  font-size: 46px;
+  line-height: 64px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+p {
+  font-family: chivoregular;
+  font-size: 18px;
+  line-height: 32px;
+  color: #263238;
+}
+.uDes {
+  font-family: chivonregular;
+  font-size: 18px;
+  line-height: 32px;
+  color: #324148;
+}
+
+.block h3 {
+  font-family: chivobold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #263238;
+}
+
+.blockBusinessWrapper h3 {
+  font-family: chivobold;
+  font-size: 31px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.mainBanner h3 {
+  padding-top: 100px;
+  font-family: chivoregular;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.menu li {
+  font-family: chivoregular;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.blockBusinessWrapper h4,
+.mainBanner h4 {
+  font-family: chivoregular;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e2efd2;
+}
+
+.mainBanner h4 {
+  max-width: 53%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.mainBannerRight h4 {
+  margin-top: 0;
+  max-width: 100%;
+  text-align: left;
+}
+
+h4 {
+  font-family: chivoregular;
+  font-size: 16px;
+  line-height: 24px;
+  color: #263238;
+}
+
+.uName h3 {
+  font-family: chivobold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #66bb6a;
+}
+
+.uJob h4 {
+  font-family: chivobold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #263238;
+}
+
+.blockBusinessWrapper * > h5 {
+  font-family: chivolight;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2.8px;
+  color: #66bb6a;
+}
+
+.buttonBlock button {
+  font-family: chivoregular;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #66bb6a;
+}
+
+.mainBannerLeft h5 {
+  font-family: chivoregular;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.blockItem h4 {
+  font-family: chivobold;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.blockItem h5 {
+  font-family: chivoregular;
+  font-size: 16px;
+  line-height: 40px;
+  color: #607d8b;
+}
+
+.contactAboutBlockWrapper h4 {
+  font-family: chivobold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #eff7e7;
+}
+
+.contactAboutBlockWrapper h3 {
+  font-family: chivoregular;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  color: #edf6e5;
+}
+
+.contactAboutBlockWrapper h5 {
+  font-family: chivolight;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  color: #edf6e5;
+}
+
+.buttonSign button {
+  font-family: chivoregular;
+  font-size: 16px;
+  line-height: 19px;
+  color: #66bb6a;
+  cursor: pointer;
+}
+
+.buttonSignUp button {
+  font-family: chivoregular;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f1f8e9;
+}
+
+.footerRightBlock p {
+  font-family: chivonregular;
+  font-size: 16px;
+  line-height: 17px;
+  color: #607d8b;
+}
+
+.footerRightBlock p:hover {
+  color: #666565;
+  transition: 0.5s;
+}
+/* 
+style animation */
+
+.menu nav a li:hover {
+  color: #66bb6a;
+  transition: 0.5s;
+}
+
+.buttonSignUp button:hover {
+  background-color: #66bb6a;
+  filter: drop-shadow(0px 13px 20px rgba(15, 143, 30, 0.411));
+  transition: 0.5s;
+  transition: 0.5s;
+}
+
+.investButton button:hover {
+  filter: drop-shadow(0px 13px 20px rgba(15, 143, 30, 0.411));
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 1441px) {
+  #background {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .burgerMenu {
+    display: block;
+  }
+
+  .menu {
+    padding-top: 60px;
+    position: fixed;
+    left: -12;
+    top: -12;
+    z-index: 100;
+    height: calc(100vh + 12px);
+    width: 30%;
+    margin: unset;
+    background-color: white;
+    transition: 1s;
+    transition-timing-function: ease;
+    display: none;
+  }
+  .logoWrapper {
+    width: 100%;
+  }
+  .menuOverlay {
+    position: fixed;
+    background-color: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin-left: calc(30% - 12px);
+    height: 100%;
+    z-index: -1;
+    transition: 1s;
+    transition-timing-function: ease;
+    display: none;
+  }
+
+  .menu nav ul {
+    text-align: left;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu ul a:last-child {
+    display: unset;
+  }
+  .logoWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttonSignUp {
+    display: none;
+  }
+  .workersImgWrapper {
+    display: none;
+  }
+
+  .buttonSignUp button {
+    background-color: #66bb6a;
+  }
+
+  .blockWrapper {
+    display: block;
+  }
+
+  .block {
+    margin: auto;
+    margin-bottom: 30px;
+    height: 370px;
+  }
+
+  .blockBusinessWrapper {
+    display: block;
+  }
+
+  .leftBlock,
+  .rightBlock {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+  }
+
+  .leftBlockMask {
+    top: 0;
+  }
+
+  .leftBlockWrapper {
+    top: -390;
+  }
+
+  .leftBlockWrapper h4,
+  .rightBlockWrapper h4 {
+    width: 100%;
+  }
+
+  .leftBlockMask {
+    top: 35;
+    height: 40%;
+  }
+  .mainBanner h3 {
+    padding-top: 50px;
+  }
+  .wordBanner3 h1 {
+    width: 70%;
+  }
+
+  .mainBannerWrapper {
+    max-width: 90%;
+    margin-top: 40px;
+  }
+  .mainBannerRight {
+    width: 60%;
+  }
+  .mainBanner h4 {
+    max-width: 70%;
+  }
+
+  .aboutBanner {
+    display: unset;
+  }
+  .infoAboutBLock {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .blockItem {
+    text-align: center;
+  }
+
+  .contactAboutBlock {
+    margin: auto;
+  }
+
+  .footerBanner {
+    display: unset;
+    text-align: center;
+  }
+  .footerLeftBlock {
+    margin-bottom: 30px;
+  }
+
+  .footerLeaf {
+    display: none;
+  }
+
+  .topLeaf {
+    display: none;
+  }
+  .bottomLeaf {
+    display: none;
+  }
+
+  .leftBlockMask {
+    display: none;
+  }
+  .leftBlock,
+  .rightBlock {
+    height: 416px;
+    width: 70%;
+    margin: auto;
+  }
+  .leftBlockWrapper {
+    top: 30;
+  }
+  .leftBlockWrapper h3 {
+    width: 100%;
+  }
+
+  .rightBlockMask {
+    display: none;
+  }
+  .rightBlockWrapper {
+    top: 30;
+  }
+}
