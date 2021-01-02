@@ -151,6 +151,10 @@ header {
   background-repeat: no-repeat;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* for header items */
 .headerItems {
   max-width: 1224px;
@@ -159,6 +163,12 @@ header {
   position: relative;
   margin: auto;
   padding: 12px;
+}
+
+.burgerMenu {
+  margin-top: 55px;
+  font-size: 30px;
+  display: none;
 }
 
 .logoWrapper {
@@ -193,6 +203,13 @@ header {
   text-decoration: none;
 }
 
+.menu ul a:last-child {
+  display: none;
+}
+.buttonSignUp a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .buttonSign button {
   margin-top: 40px;
   width: 130px;
@@ -200,6 +217,11 @@ header {
   background: #ffffff;
   border: none;
   border-radius: 5px;
+}
+
+.buttonSign button:hover {
+  filter: drop-shadow(0px 13px 20px rgba(226, 233, 226, 0.411));
+  transition: 0.5s;
 }
 
 .buttonSignUp button {
@@ -325,6 +347,18 @@ header {
   position: relative;
 }
 
+.rightBlockMask {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(97, 118, 127, 0.0001) 0%,
+    #324148 100%
+  );
+  border-radius: 5px;
+  position: relative;
+}
+
 .leftBlockWrapper h5,
 .rightBlockWrapper h5 {
   margin-top: 50px;
@@ -367,6 +401,11 @@ header {
   margin-top: 30px;
 }
 
+.buttonBlock button:hover {
+  filter: drop-shadow(0px 13px 20px rgba(226, 233, 226, 0.411));
+  transition: 0.5s;
+}
+
 .lineRec {
   width: 56px;
   height: 4px;
@@ -405,10 +444,11 @@ header {
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  cursor: pointer;
 }
 
-.innerLine{
-  background: #A5D6A7;
+.innerLine {
+  background: #a5d6a7;
   width: 100%;
   height: 2px;
   position: absolute;
@@ -442,7 +482,7 @@ header {
 }
 
 .wordBanner3 h1 {
-  max-width: 50%;
+  width: 50%;
 }
 
 .slider {
@@ -502,7 +542,7 @@ header {
   margin: auto;
 }
 
-.arrowWrapper{
+.arrowWrapper {
   max-width: 1056px;
   margin: auto;
   display: flex;
@@ -511,21 +551,37 @@ header {
   padding: 12px;
 }
 
-.prevArrow{
-  background: #FFFFFF;
-  box-shadow: -1px 13px 20px #F0F2F4;
+.prevArrow,
+.nextArrow {
+  background: #ffffff;
+  box-shadow: -1px 13px 20px #f0f2f4;
   width: 64px;
   height: 64px;
   text-align: center;
   border-radius: 50px;
   font-size: 30px;
   font-weight: 200;
-  color:#8AA1AC;
+  color: #8aa1ac;
   padding-top: 16px;
-  margin-right: 20px ;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
-.nextArrow{
+.prevArrow:hover,
+.nextArrow:hover {
+  background: #66bb6a;
+  box-shadow: 0px 25px 25px rgba(118, 196, 125, 0.314538);
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: 200;
+  color: #b3dcb6;
+  padding-top: 16px;
+}
+
+/* .nextArrow{
    background: #66BB6A;
   box-shadow: 0px 25px 25px rgba(118, 196, 125, 0.314538);
   width: 64px;
@@ -536,42 +592,6 @@ header {
   font-weight: 200;
   color: #B3DCB6;
   padding-top: 16px;
-}
-/* 
-.slick-prev:after {
-  background: #66BB6A;
-  box-shadow: 0px 25px 25px rgba(118, 196, 125, 0.314538);
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  top: 200;
-  left: 300;
-  content: "<";
-  color: white;
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border-radius: 50px;
-}
-
-.slick-next:after {
-  background: #66BB6A;
-  box-shadow: 0px 25px 25px rgba(118, 196, 125, 0.314538);
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  top: 200;
-  right: 1050;
-  content: ">";
-  color: white;
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border-radius: 50px;
 } */
 
 .headersliderBlock {
@@ -614,8 +634,21 @@ header {
   text-align: left;
 }
 
+.blockItem h4:hover,
+.blockItem h5:hover {
+  color: #66bb6a;
+  transition: 0.5s;
+}
+
+.contactAboutBlock h4:hover,
+.contactAboutBlock h5:hover,
+.contactAboutBlock h3:hover {
+  color: #b3f3b6;
+  transition: 0.5s;
+}
+
 .contactAboutBlock {
-  width: 26%;
+  width: 280px;
   height: 258px;
   background: #66bb6a;
   border-radius: 5px;
@@ -836,6 +869,7 @@ h4 {
   font-size: 16px;
   line-height: 19px;
   color: #66bb6a;
+  cursor: pointer;
 }
 
 .buttonSignUp button {
@@ -852,8 +886,212 @@ h4 {
   color: #607d8b;
 }
 
+.footerRightBlock p:hover {
+  color: #666565;
+  transition: 0.5s;
+}
+/* 
+style animation */
+
+.menu nav a li:hover {
+  color: #66bb6a;
+  transition: 0.5s;
+}
+
+.buttonSignUp button:hover {
+  background-color: #66bb6a;
+  filter: drop-shadow(0px 13px 20px rgba(15, 143, 30, 0.411));
+  transition: 0.5s;
+  transition: 0.5s;
+}
+
+.investButton button:hover {
+  filter: drop-shadow(0px 13px 20px rgba(15, 143, 30, 0.411));
+  transition: 0.5s;
+}
+
 @media only screen and (min-width: 1441px) {
   #background {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .burgerMenu {
+    display: block;
+  }
+
+  .menu {
+    padding-top: 60px;
+    position: fixed;
+    left: -12;
+    top: -12;
+    z-index: 100;
+    height: calc(100vh + 12px);
+    width: 30%;
+    margin: unset;
+    background-color: white;
+    transition: 1s;
+    transition-timing-function: ease;
+    display: none;
+  }
+  .logoWrapper {
+    width: 100%;
+  }
+  .menuOverlay {
+    position: fixed;
+    background-color: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin-left: calc(30% - 12px);
+    height: 100%;
+    z-index: -1;
+    transition: 1s;
+    transition-timing-function: ease;
+    display: none;
+  }
+
+  .menu nav ul {
+    text-align: left;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu ul a:last-child {
+    display: unset;
+  }
+  .logoWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttonSignUp {
+    display: none;
+  }
+  .workersImgWrapper {
+    display: none;
+  }
+
+  .buttonSignUp button {
+    background-color: #66bb6a;
+  }
+
+  .blockWrapper {
+    display: block;
+  }
+
+  .block {
+    margin: auto;
+    margin-bottom: 30px;
+    height: 370px;
+  }
+
+  .blockBusinessWrapper {
+    display: block;
+  }
+
+  .leftBlock,
+  .rightBlock {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+  }
+
+  .leftBlockMask {
+    top: 0;
+  }
+
+  .leftBlockWrapper {
+    top: -390;
+  }
+
+  .leftBlockWrapper h4,
+  .rightBlockWrapper h4 {
+    width: 100%;
+  }
+
+  .leftBlockMask {
+    top: 35;
+    height: 40%;
+  }
+  .mainBanner h3 {
+    padding-top: 50px;
+  }
+  .wordBanner3 h1 {
+    width: 70%;
+  }
+
+  .mainBannerWrapper {
+    max-width: 90%;
+    margin-top: 40px;
+  }
+  .mainBannerRight {
+    width: 60%;
+  }
+  .mainBanner h4 {
+    max-width: 70%;
+  }
+
+  .aboutBanner {
+    display: unset;
+  }
+  .infoAboutBLock {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .blockItem {
+    text-align: center;
+  }
+
+  .contactAboutBlock {
+    margin: auto;
+  }
+
+  .footerBanner {
+    display: unset;
+    text-align: center;
+  }
+  .footerLeftBlock {
+    margin-bottom: 30px;
+  }
+
+  .footerLeaf {
+    display: none;
+  }
+
+  .topLeaf {
+    display: none;
+  }
+  .bottomLeaf {
+    display: none;
+  }
+
+  .leftBlockMask {
+    display: none;
+  }
+  .leftBlock,
+  .rightBlock {
+    height: 416px;
+    width: 70%;
+    margin: auto;
+  }
+  .leftBlockWrapper {
+    top: 30;
+  }
+  .leftBlockWrapper h3 {
+    width: 100%;
+  }
+
+  .rightBlockMask {
+    display: none;
+  }
+  .rightBlockWrapper {
+    top: 30;
   }
 }
