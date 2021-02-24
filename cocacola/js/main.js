@@ -12,19 +12,32 @@ function close_nav() {
     document.getElementsByClassName("header--menu")[0].style.display = "flex";
 }
 
-function open_find() {
-    document.getElementById("search--input").style.display = "block";
-    document.getElementsByClassName("header--icon")[0].style.width ="20%";
+function open_log() {
+    document.getElementsByClassName("header--container-login")[0].style.display="block";
 }
 
-window.addEventListener("click", function (e) {
-  if (document.getElementsByClassName("search-open")[0].contains(e.target)) {
-    document.getElementById("search--input").style.display = "block";
-      document.getElementsByClassName("header--icon")[0].style.width = "20%";
-      document.getElementsByClassName("fa-search")[0].style.color = "red";
-  } else {
-    document.getElementById("search--input").style.display = "none";
-      document.getElementsByClassName("header--icon")[0].style.width = "10%";
-      document.getElementsByClassName("fa-search")[0].style.color = "white";
+
+// close login
+document.addEventListener("mouseup", function (e) {
+    var container = document.getElementsByClassName("login-wrapper")[0];
+    var wrapper = document.getElementsByClassName("header--container-login")[0];
+  if (!container.contains(e.target)) {
+    wrapper.style.display = "none";
   }
 });
+
+
+// close regis
+document.addEventListener("mouseup", function (e) {
+  var container = document.getElementsByClassName("login-wrapper")[1];
+  var wrapper = document.getElementsByClassName("header--container-regis")[0];
+  if (!container.contains(e.target)) {
+    wrapper.style.display = "none";
+  }
+});
+
+function open_regis() {
+  document.getElementsByClassName("header--container-regis")[0].style.display =
+        "block";
+    document.getElementsByClassName("header--container-login")[0].style.display = "none";
+}
