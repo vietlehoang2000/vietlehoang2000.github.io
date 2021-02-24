@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main--container-firstBanner img{
+    width: 100%;
+}
+
+.slider{
+    display: flex;
+    margin: auto;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.carousel{
+    height: 100px;
+}
+
+.slick-active{
+    height: 100px !important;
+}
+
+.item3 img{
+
+}
