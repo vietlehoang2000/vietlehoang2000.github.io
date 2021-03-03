@@ -26,7 +26,9 @@
     justify-content: space-between;
     
 }
-
+.cokeDes-block{
+    margin: 10px;
+}
 .cokeDes-block-img{
     text-align: center;
     margin-bottom: 20px;
@@ -289,6 +291,29 @@
     .h1--white, .h1--black{
         font-size: 18px;
     }
+
+    .cokeDes-block{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+    .block span{
+        font-size: 14px;
+    }
+
+    .block a{
+        font-size: 14px;
+    }
  
 }
 
@@ -297,5 +322,16 @@
     .wrapper--cokeDes{
         max-width: 90%;
         flex-wrap: wrap;
+    }
+
+    .input--discount input{
+        width: 200px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+    h1{
+        font-size: 22px;
     }
 }
