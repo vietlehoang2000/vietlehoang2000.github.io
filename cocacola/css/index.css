@@ -7,6 +7,7 @@
 .main--container-firstBanner{
     width: 100%;
     height: auto;
+    padding-top: 85px;
 }
 .main--container-firstBanner img{
     width: 100%;
@@ -293,27 +294,10 @@
     }
 
     .cokeDes-block{
-        width: 40%;
+        width: 42%;
     }
 
-    h1{
-        font-size: 24px;
-    }
-
-    h2{
-        font-size: 20px;
-    }
-
-    h3{
-        font-size: 14px;
-    }
-    .block span{
-        font-size: 14px;
-    }
-
-    .block a{
-        font-size: 14px;
-    }
+    
  
 }
 
