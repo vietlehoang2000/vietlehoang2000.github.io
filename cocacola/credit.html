@@ -3,11 +3,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thanh Toán | Coca-Cola® Việt Nam</title>
+    <title>Hình thức thanh toán | Coca-Cola® Việt Nam</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon"/>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/confirm.css">
+    <link rel="stylesheet" href="css/credit.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
@@ -111,7 +111,7 @@
     </header>
     <main>
         <div class="main--wrapper">
-            <div class="pageNav">
+             <div class="pageNav">
           <a href="index.html"><h4>Trang chủ</h4></a>
           <a href="Store.html"><h4>/Cửa hàng</h4></a>
           <a href=""><h4>/Hoodie</h4></a>
@@ -127,8 +127,11 @@
               </div>
             </div>
              <div class="firstBanner-block">
-              <div class="block-line"></div>
+               <div class="block-line"></div>
+               <div class="block-check">
+              <i class="fas fa-check"></i>
               <h4>Xác nhận giỏ hàng</h4>
+              </div>
             </div>
              <div class="firstBanner-block">
               <div class="block-line"></div>
@@ -139,29 +142,47 @@
               <h4>Đặt hàng thành công</h4>
             </div>
         </div>
-        <h2>Giỏ hàng</h2>
+        <h2>Thông tin thanh toán</h2>
         <div class="main--container-secondBanner">
-          <div class="secondBanner-leftblock">
-            <div class="leftBlock-des">
-              <h3>Sản phẩm</h3>
-              <h3>Giá</h3>
-              <h3>Số lượng</h3>
-              <h3>Thành tiền</h3>
+          <div class="secondBanner-leftBlock">
+          <div class="secondBanner-Credit">
+            <div class="Credit-choice">
+              <input type="radio" name="payment">
+              <div class="credit-img"><img src="img/credit-card.svg" alt=""></div>
+              <h2>Credit card</h2>
             </div>
-            <div class="leftBLock-line"></div>
-            <div class="leftBLock-product">
-              <div class="productImg"><img src="img/hoodie2.png" alt=""></div>
-              <div class="product-des">
-                <div class="product-name"><h3>ÁO HOODIE COKE</h3></div>
-                <div class="product-price"><h4>500.000₫</h4></div>
-                <div class="product-numb"><input type="text" placeholder="1" onfocus="this.placeholder = ''"
-onblur="this.placeholder = '1'"></div>
-                  <div class="product-final"><h4>500.000₫</h4></div>
-                  <div class="product-color"><h5>Màu: <span>Xanh</span> </h5></div>
-                  <div class="product-size"><h5>Size: <span>L</span></h5></div>
+            <div class="Credit-des">
+              <div class="Credit-des-firstBlock">
+                <div class="firstBlock-left">
+                  <h3>Mã số thẻ</h3>
+                  <input type="text" name="" id="">
+                  <div class="Credit-Type">
+                    <div class="Union-img"><img src="img/CreditAE.png" alt=""></div>
+                    <div class="master-img"><img src="img/CreditMaster.png" alt=""></div>
+                    <div class="visa-img"><img src="img/CreditVisa.png" alt="img/c"></div>
+                    <div class="discover-img"><img src="img/CreditDI.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="firstBlock-right">
+                  <h3>Ngày hết hạn</h3>
+                  <input type="text">
+                </div>
               </div>
+              <div class="Credit-des-secondBlock">
+                <h3>Số xác minh thẻ</h3>
+                <input type="text">
+              </div>
+              <div class="button button-black">Thanh toán</div>
             </div>
-            <div class="leftBLock-line"></div>
+          </div>
+          <div class="leftBlock-line"></div>
+          <div class="secondBanner-Paypal">
+            <div class="Paypal-choice">
+              <input type="radio" name="payment">
+              <div class="paypal-img"><img src="img/paypal.png" alt=""></div>
+              <h2>Paypal</h2>
+            </div>
+          </div>
           </div>
           <div class="secondBanner-rightBlock">
             <div class="rightBLock-Receipt">
@@ -302,5 +323,4 @@ onblur="this.placeholder = '1'"></div>
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/cocaType.js"></script>
 </html>
