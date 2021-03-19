@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+.main-wrapper{
+    max-width: 1440px;
+    padding: 14px;
+}
+
+table{
+    width: 100%;
+}
+
+.main-wrapper h1{
+    text-align: center;
+}
+
+.button-add{
+    width: 150px;
+    height: 50px;
+    background-color: #00A751;
+    margin-bottom: 30px;
+}
+
+.button-add button{
+    background-color: unset;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+table{
+    border: none;
+}
+
+tr th{
+    text-align: start;
+}
+.odd{
+    background-color: rgba(0, 0, 0, 0.05);
+}
