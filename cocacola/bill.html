@@ -3,12 +3,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hình thức thanh toán | Coca-Cola® Việt Nam</title>
+    <title>Hóa Đơn | Coca-Cola® Việt Nam</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon"/>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/confirm.css">
     <link rel="stylesheet" href="css/credit.css">
+    <link rel="stylesheet" href="css/bill.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
@@ -25,7 +26,7 @@
         <div class="menu-wrapper-web">
           <div class="menu-block">
             <ul>
-              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="index.html" >Trang chủ</a></li>
               <li><a href="">Về Coca-Cola®</a></li>
               <li><a href="cocaType.html">Sản phẩm</a></li>
               <li><a href="brand.html">Thương hiệu</a></li>
@@ -40,7 +41,7 @@
           <div class="icon icon--shopping">
             <a href="confirm.html"><i class="fas fa-shopping-cart"></i></a>
           </div>
-          <div class="icon icon--profile" onclick="open_log()"><a href="account.html"><i class="fas fa-user"></a></i></div>
+          <div class="icon icon--profile" onclick="open_log()"><a><i class="fas fa-user"></a></i></div>
         </div>
       </div>
       <div class="header--burgermenu-expand">
@@ -48,7 +49,7 @@
         <div class="menu-wrapper">
           <div class="menu-block">
             <ul>
-              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="index.html" >Trang chủ</a></li>
               <li><a href="">Về Coca-Cola® Việt Nam</a></li>
               <li><a href="cocaType.html">Thông tin sản phẩm</a></li>
               <li><a href="brand.html">Thương hiệu</a></li>
@@ -66,11 +67,11 @@
               </div>
                <div class="body--login">
                    <h3>Chào mừng bạn đến <br>với Coca-Cola®</h3>
-                   <div class="login-input"><input type="text" placeholder="Email"></div>
-                   <div class="login-input"><input type="text"placeholder="Mật khẩu"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="checkusername"></div>
+                   <div class="login-input"><input type="text"placeholder="Mật khẩu" id="checkpassword"></div>
                    <h4>Quên mật khẩu</h4>
                    <div class="button button--login-red">
-                <button>ĐĂNG NHẬP</button>
+                <button id="loginAcc">ĐĂNG NHẬP</button>
                  </div>
                  <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
                  <div class="button button--login-blue">
@@ -92,10 +93,10 @@
                <div class="body--login">
                  <div class="login-input"><input type="text" placeholder="Họ và Tên"></div>
                  <div class="login-input"><input type="date" placeholder="Tuổi"></div>
-                   <div class="login-input"><input type="text" placeholder="Email"></div>
-                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="username"></div>
+                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu" id="password"></div>
                    <div class="button button--login-red" style="margin-top:10px">
-                <button>ĐĂNG KÝ</button>
+                <button id="createAcc">ĐĂNG KÝ</button>
                  </div>
                  <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
                  <div class="button button--login-blue">
@@ -121,13 +122,12 @@ onblur="this.placeholder = 'Search'">
     </header>
     <main>
         <div class="main--wrapper">
-             <div class="pageNav">
+           <div class="pageNav">
           <a href="index.html"><h4>Trang chủ</h4></a>
           <a href="Store.html"><h4>/Cửa hàng</h4></a>
-          <a href="product.html"><h4>/Hoodie</h4></a>
+          <a href=""><h4>/Hoodie</h4></a>
           <a href=""><h4>/Thanh toán</h4></a>
-        </div>
-        <h1>thanh toán</h1>
+        </div>  
         <div class="main--container-firstBanner">
             <div class="firstBanner-block">
               <div class="block-line"></div>
@@ -137,96 +137,62 @@ onblur="this.placeholder = 'Search'">
               </div>
             </div>
              <div class="firstBanner-block">
-               <div class="block-line"></div>
-               <div class="block-check">
+              <div class="block-line"></div>
+              <div class="block-check">
               <i class="fas fa-check"></i>
               <h4>Xác nhận giỏ hàng</h4>
               </div>
             </div>
              <div class="firstBanner-block">
               <div class="block-line"></div>
+              <div class="block-check">
+              <i class="fas fa-check"></i>
               <h4>Hình thức thanh toán</h4>
+              </div>
             </div>
              <div class="firstBanner-block">
               <div class="block-line"></div>
+              <div class="block-check">
+              <i class="fas fa-check"></i>
               <h4>Đặt hàng thành công</h4>
+              </div>
             </div>
         </div>
-        <h2>Thông tin thanh toán</h2>
         <div class="main--container-secondBanner">
-          <div class="secondBanner-leftBlock">
-          <div class="secondBanner-Credit">
-            <div class="Credit-choice">
-              <input type="radio" name="payment" id="open_credit">
-              <div class="credit-img"><img src="img/credit-card.svg" alt=""></div>
-              <h3>Credit card</h3>
-            </div>
-            <div class="Credit-des">
-              <div class="Credit-des-firstBlock">
-                <div class="firstBlock-left">
-                  <h3>Mã số thẻ</h3>
-                  <div class="cardNumb">
-                    <img src="img/card.png" alt="" >
-                  <input type="text" name="" id="" placeholder="4111 1111 1111 1111" onfocus="this.placeholder = ''"
-onblur="this.placeholder = '4111 1111 1111 1111'">
-                  </div>
-                  <div class="Credit-Type">
-                    <div class="Union-img card"><img src="img/CreditAE.png" alt=""></div>
-                    <div class="master-img card" ><img src="img/CreditMaster.png" alt=""></div>
-                    <div class="visa-img card" ><img src="img/CreditVisa.png" alt="img/c"></div>
-                    <div class="discover-img card"><img src="img/CreditDI.png" alt=""></div>
-                  </div>
+            <div class="secondBanner-leftBlock">
+                <h1>Cảm ơn bạn đã đặt hàng tại Coca-Cola®</h1>
+                <div class="leftBlock-shipDes">
+                    <h1>Đơn hàng được giao đến</h1>
+                    <div class="leftBlock-line"></div>
+                    <h3>Thông tin khách hàng</h3>
+                    <p>Viet Le</p>
+                    <p>So 11, ngo 127, An Trach, Dong Da, Ha Noi</p>
+                    <p>0972136868</p>
                 </div>
-                <div class="firstBlock-right">
-                  <h3>Ngày hết hạn</h3>
-                  <input type="text" placeholder="1/2021 " onfocus="this.placeholder = ''"
-onblur="this.placeholder = '1/2021'">
+                <h1>Kiện hàng</h1>
+                <div class="leftBlock-line"></div>
+                <div class="leftBlock-item">
+                    <div class="item-img"><img src="img/hoodie2.png" alt=""></div>
+                    <div class="item-des">
+                        <h3>ÁO HOODIE COKE</h3>
+                        <div class="item-color">
+                            <h4>Màu:</h4>
+                            <p>Xanh</p>
+                        </div>
+                        <div class="item-size">
+                            <h4>Size:</h4>
+                            <p>L</p>
+                        </div>
+                        <div class="item-numb">
+                          <h4>Số lượng:</h4>
+                          <p>1</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="Credit-des-secondBlock">
-                <h3>Số xác minh thẻ</h3>
-                <input type="text" placeholder="CVV " onfocus="this.placeholder = ''"
-onblur="this.placeholder = 'CVV'">
-              </div>
-              <div class="button button-black"><a href="bill.html"><button>Thanh toán</button></a></div>
             </div>
-          </div>
-          <div class="leftBlock-line"></div>
-          <div class="secondBanner-Paypal">
-            <div class="Paypal-choice">
-              <input type="radio" name="payment" id="close_credit">
-              <div class="paypal-img"><img src="img/paypal.png" alt=""></div>
-              <h3>Paypal</h3>
-            </div>
-            <div class="Credit-des-2">
-              <div class="Credit-des-firstBlock">
-                <div class="firstBlock-left">
-                  <h3>Mã số thẻ</h3>
-                  <div class="cardNumb">
-                    <img src="img/card.png" alt="" >
-                  <input type="text" name="" id="" placeholder="4111 1111 1111 1111" onfocus="this.placeholder = ''"
-onblur="this.placeholder = '4111 1111 1111 1111'">
-                  </div>
-                </div>
-                <div class="firstBlock-right">
-                  <h3>Ngày hết hạn</h3>
-                  <input type="text" placeholder="1/2021 " onfocus="this.placeholder = ''"
-onblur="this.placeholder = '1/2021'">
-                </div>
-              </div>
-              <div class="Credit-des-secondBlock">
-                <h3>Số xác minh thẻ</h3>
-                <input type="text" placeholder="CVV " onfocus="this.placeholder = ''"
-onblur="this.placeholder = 'CVV'">
-              </div>
-              <div class="button button-black"><a href="bill.html"><button>Thanh toán</button></a></div>
-            </div>
-          </div>
-           <div class="leftBlock-line"></div>
-          </div>
-          <div class="secondBanner-rightBlock">
-            <div class="rightBLock-Receipt">
-            <h3>Mua hàng</h3>
+            <div class="secondBanner-rightBlock">
+                <div class="rightBLock-Receipt">
+            <h3>Hóa đơn</h3>
             <div class="rightBlock-line"></div>
             <h4 style="text-align: center;">Ước tính giá trị chi phí ship và thuế hàng hóa</h4>
             <div class="rightBlock-line"></div>
@@ -244,15 +210,7 @@ onblur="this.placeholder = 'CVV'">
               <p>530.000₫</p>
             </div>
           </div>
-          <div class="rightBLock-Shipment">
-            <h3>Vận chuyển</h3>
-            <div class="rightBlock-line"></div>
-            <h5 style="margin-bottom: 10px;">Thông tin khách hàng</h5>
-            <p>Viet Le</p>
-            <p>So 11, ngo 127, An Trach, Dong Da, Ha Noi</p>
-            <p>0972136868</p>
-          </div>
-          </div>
+            </div>
         </div>
         <div class="main--container-thirdBanner">
           <div class="thirdBanner-block">
@@ -284,10 +242,8 @@ onblur="this.placeholder = 'CVV'">
             </div>
           </div>
         </div>
-        </div>
-
-        
-      <div class="main--container-forthBanner">
+    </div>
+    <div class="main--container-forthBanner">
           <div class="forthBanner-wrapper">
           <div class="forthBanner-des"><h3>Nhận thông tin khuyến mãi mới nhất từ Coca-Cola Việt Nam</h3></div>
           <div class="input input--discount">
@@ -402,6 +358,5 @@ onblur="this.placeholder = 'CVV'">
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/credit.js"></script>
     <script src="js/main.js"></script>
 </html>

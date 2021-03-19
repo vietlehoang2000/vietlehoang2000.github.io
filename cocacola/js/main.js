@@ -17,6 +17,11 @@ function close_nav() {
 }
 
 function open_log() {
+
+  let checklogged = JSON.parse(localStorage.getItem("logged"));
+  if (checklogged == 1)
+    location.href = "account.html";
+  else
   document.getElementsByClassName("header--container-login")[0].style.display =
     "block";
 }
@@ -66,4 +71,29 @@ $(document).mouseup(function (e) {
   }
   search = false;
   $(".fa-search").css("color", "white");
+});
+
+// save info to local storage
+$("#createAcc").click(function () {
+  let nameinput = $("#username").val();
+  let passinput = $("#password").val();
+  if (nameinput == "" && passinput == "") alert("Dien thong tin");
+  else {
+    localStorage.setItem("id", nameinput);
+    localStorage.setItem("pass", passinput);
+    alert("Đăng ký thành công");
+  }
+});
+
+// check info from local storage
+$("#loginAcc").click(function () {
+  let checknameinput = $("#checkusername").val();
+  let checkpassinput = $("#checkpassword").val();
+  let username = JSON.parse(localStorage.getItem("id"));
+  let userpass = JSON.parse(localStorage.getItem("pass"));
+  if (checknameinput == username && checkpassinput == userpass) {
+    alert("Đăng nhập thành công");
+    location.href = "account.html";
+    localStorage.setItem("logged", "1");
+  } else alert("Sai tên tài khoản hoặc mật khẩu");
 });

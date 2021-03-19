@@ -1,12 +1,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang chủ | Coca-Cola® Việt Nam</title>
-     <link rel="icon" href="img/logo.png" type="image/x-icon"/>
+    <title>Sản Phẩm | Coca-Cola® Việt Nam</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon"/>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/credit.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body>
     <header>
@@ -21,10 +25,10 @@
         <div class="menu-wrapper-web">
           <div class="menu-block">
             <ul>
-              <li><a href="index.html" style="color: red;">Trang chủ</a></li>
+              <li><a href="index.html" >Trang chủ</a></li>
               <li><a href="">Về Coca-Cola®</a></li>
               <li><a href="cocaType.html">Sản phẩm</a></li>
-              <li><a href="brand.html">Thương hiệu</a></li>
+              <li><a href="brand.html" style="color: red;">Thương hiệu</a></li>
               <li><a href="Store.html">Cửa hàng</a></li>
             </ul>
           </div>
@@ -36,7 +40,7 @@
           <div class="icon icon--shopping">
             <a href="confirm.html"><i class="fas fa-shopping-cart"></i></a>
           </div>
-          <div class="icon icon--profile" onclick="open_log()"><a href="account.html"><i class="fas fa-user"></a></i></div>
+          <div class="icon icon--profile" onclick="open_log()"><a><i class="fas fa-user"></a></i></div>
         </div>
       </div>
       <div class="header--burgermenu-expand">
@@ -44,10 +48,10 @@
         <div class="menu-wrapper">
           <div class="menu-block">
             <ul>
-              <li><a href="index.html" style="color: red;">Trang chủ</a></li>
+              <li><a href="index.html" >Trang chủ</a></li>
               <li><a href="">Về Coca-Cola® Việt Nam</a></li>
               <li><a href="cocaType.html">Thông tin sản phẩm</a></li>
-              <li><a href="brand.html">Thương hiệu</a></li>
+              <li><a href="brand.html" style="color: red;">Thương hiệu</a></li>
               <li><a href="cocaProduct.html">Cá nhân hóa</a></li>
               <li><a href="Store.html">Cửa hàng</a></li>
               <li><a href="account.html">Tài khoản</a></li>
@@ -62,11 +66,11 @@
               </div>
                <div class="body--login">
                    <h3>Chào mừng bạn đến <br>với Coca-Cola®</h3>
-                   <div class="login-input"><input type="text" placeholder="Email"></div>
-                   <div class="login-input"><input type="text"placeholder="Mật khẩu"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="checkusername"></div>
+                   <div class="login-input"><input type="text"placeholder="Mật khẩu" id="checkpassword"></div>
                    <h4>Quên mật khẩu</h4>
                    <div class="button button--login-red">
-                <button>ĐĂNG NHẬP</button>
+                <button id="loginAcc">ĐĂNG NHẬP</button>
                  </div>
                  <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
                  <div class="button button--login-blue">
@@ -88,10 +92,10 @@
                <div class="body--login">
                  <div class="login-input"><input type="text" placeholder="Họ và Tên"></div>
                  <div class="login-input"><input type="date" placeholder="Tuổi"></div>
-                   <div class="login-input"><input type="text" placeholder="Email"></div>
-                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="username"></div>
+                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu" id="password"></div>
                    <div class="button button--login-red" style="margin-top:10px">
-                <button>ĐĂNG KÝ</button>
+                <button id="createAcc">ĐĂNG KÝ</button>
                  </div>
                  <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
                  <div class="button button--login-blue">
@@ -116,158 +120,76 @@ onblur="this.placeholder = 'Search'">
       </div>
     </header>
     <main>
-      <div class="main--container-firstBanner">
-        <img src="img/firstBanner.png" alt="" />
-      </div>
-      <div class="main--container-secondBanner">
-        <div class="title h2--black">
-          <h1>Coca-Cola® dành cho bạn</h1>
+        <div class="main--wrapper">
+        <h1>Thương hiệu thuộc sở hữu Coca-Cola® </h1>
+        <div class="main--container-firstBanner">
+            <div class="firstBanner-block block-1">
+                <a href="https://www.facebook.com/spritevn/">
+                <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/spriteTitle.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/sprite-index-page.png" alt=""></div>
+                </a>
+            </div>
+            <div class="firstBanner-block block-2">
+                 <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/cocacolaTitle.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/coca-cola-index-page.png" alt=""></div>
+            </div>
+            <div class="firstBanner-block block-3">
+                 <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/fuze-tea-title.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/fuze-tea-index-page.png" alt=""></div>
+            </div>
+            <div class="firstBanner-block block-4">
+                 <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/Dasani-Title.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/header-images-mobile-dasani.png" alt=""></div>
+            </div>
+            <div class="firstBanner-block block-5">
+                 <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/cocacola-energy-title.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/coca-cola-energy-index-page.png" alt=""></div>
+            </div>
+            <div class="firstBanner-block block-6">
+                 <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/cocacola-diet-title.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/diet-coke-index-page.png" alt=""></div>
+            </div>
+            <div class="firstBanner-block block-7">
+                 <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/schweppesTitle.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/schweppes-classic-index-page.png" alt=""></div>
+            </div>
+            <div class="firstBanner-block block-8">
+                 <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/fantaTitle.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/fanta.jpg" alt=""></div>
+            </div>
+            <div class="firstBanner-block block-9">
+                 <div class="block-overlay">
+                    <div class="overlay-img"><img src="img/Minute_Maid_title.png" alt=""></div>
+                </div>
+                <div class="block-img"><img src="img/06_minute-maid.png" alt=""></div>
+            </div>
         </div>
-        <div class="wrapper--cokeDes">
-          
-          <div class="cokeDes-block"  onclick="location.href='cocaType.html';" style="cursor: pointer;">
-            <div class="cokeDes-block-img">
-              <img src="img/cocaOriginal.png" alt="" />
-            </div>
-            <div class="cokeDes-block-name"><h3>Coca-cola Original</h3></div>
-            <div class="cokeDes-block-button button--choose-black">
-              <button>CHỌN</button>
-            </div>
-            
-          </div>
-          
-          <div class="cokeDes-block" onclick="location.href='cocaType.html';" style="cursor: pointer;">
-            <div class="cokeDes-block-img">
-              <img src="img/cocaNoSugar.png" alt="" />
-            </div>
-            <div class="cokeDes-block-name"><h3>Coca-cola Zero</h3></div>
-            <div class="cokeDes-block-button button--choose-black">
-              <button>CHỌN</button>
-            </div>
-          </div>
-          
-          
-          <div class="cokeDes-block" onclick="location.href='cocaType.html';" style="cursor: pointer;">
-            <div class="cokeDes-block-img">
-              <img src="img/cocaCan.png" alt="" />
-            </div>
-            <div class="cokeDes-block-name"><h3>Coca-cola Energy</h3></div>
-            <div class="cokeDes-block-button button--choose-black">
-              <button>CHỌN</button>
-            </div>
-          </div>
-         
-          
-          <div class="cokeDes-block" onclick="location.href='cocaType.html';" style="cursor: pointer;">
-            <div class="cokeDes-block-img">
-              <img src="img/cocaCherry.png" alt="" />
-            </div>
-            <div class="cokeDes-block-name"><h3>Coca-cola Vanilla</h3></div>
-            <div class="cokeDes-block-button button--choose-black">
-              <button>CHỌN</button>
-            </div>
-          </div>
-          
         </div>
-      </div>
-      <div class="main--container-thirdBanner">
-        <div class="thirdBanner--block">
-          <div class="thirdBanner--block-img">
-            <img src="img/banner3_sustain.png" alt="" />
-          </div>
-          <div class="block--overlay"></div>
-          <a href="Store.html">
-          <div class="h1--white">
-            <h1>
-              Cửa hàng
-            </h1>
-          </div>
-          </a>
-        </div>
-        <div class="thirdBanner--block">
-          <div class="thirdBanner--block-img">
-            <img src="img/banner3_brand.png" alt="" />
-          </div>
-          <div class="block--overlay"></div>
-          <a href="brand.html"><div class="h1--white"><h1>Thương hiệu</h1></div></a>
-        </div>
-        <div class="thirdBanner--block">
-          <div class="thirdBanner--block-img">
-            <img src="img/banner3_ask.png" alt="" />
-          </div>
-          <div class="block--overlay"></div>
-          <a href="https://www.facebook.com/Coca-Cola-684491471670573/">
-          <div class="h1--white"><h1>FaQs</h1></div>
-          </a>
-          </a>
-        </div>
-        <div class="thirdBanner--block">
-          <div class="thirdBanner--block-img">
-            <img src="img/banner3_career.png" alt="" />
-          </div>
-          <div class="block--overlay"></div>
-          <a href="https://www.facebook.com/Coca-Cola-684491471670573/">
-          <div class="h1--white"><h1>Nghề nghiệp</h1></div>
-          </a>
-        </div>
-      </div>
-      <div class="main--container-forthBanner">
-        <div class="h2--white">
-          <h2>Đăng ký để nhận ngay ưu <br />đãi 15% tổng hóa đơn</h2>
-        </div>
-        <div class="input input--discount">
+        <div class="main--container-forthBanner">
+          <div class="forthBanner-wrapper">
+          <div class="forthBanner-des"><h3>Nhận thông tin khuyến mãi mới nhất từ Coca-Cola Việt Nam</h3></div>
+          <div class="input input--discount">
           <input type="text" placeholder="Địa chỉ Mail" />
           <button>ĐĂNG KÝ</button>
         </div>
-      </div>
-      <div class="main--container-fifthBanner">
-        <div class="fifthBanner-blockLeft">
-          <img src="img/leftBlockImg.jpg" alt="" />
         </div>
-        <div class="fifthBanner-blockRight">
-          <div class="blockRight-wrapper">
-            <div class="h3--gold"><h3>Coca-cola Store</h3></div>
-            <div class="h1--black"><h1>Coca-Cola® của bạn</h1></div>
-            <div class="p--black">
-              <p>
-                Một sản phẩm mang đậm dấu ấn cá nhân của bạn, một món quà tuyệt
-                vời dành cho bạn bè và gia đình trong những dịp đặc biệt. Hãy để
-                chúng tôi cá nhân hóa lon coca-cola® của bạn.
-              </p>
-            </div>
-            <div class="input-wrapper">
-            <div class="input input--customize">
-              <input type="text" placeholder="Tên của bạn" />
-            </div>
-            <div class="button button--send-red">
-              <a href="cocaProduct.html"><button>CHỌN</button></a>
-            </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="main--container-sixthBanner">
-        <div class="sixthBanner-blockRight">
-          <img src="img/merch.jpg" alt="" />
-        </div>
-        <div class="sixthBanner-blockLeft">
-          <div class="b lockRight-wrapper">
-            <div class="h3--gold"><h3>Coca-cola Store</h3></div>
-            <div class="h1--black"><h1>Shop Coca-Cola®</h1></div>
-            <div class="p--black">
-              <p>
-                Thời trang không nhất thiết phải đến từ nhãn mác, thương hiệu. Thời trang đến từ những thứ ẩn bên trong tâm hồn, tính cách của bạn
-              </p>
-            </div>
-            <div class="button button--send-red">
-              <a href="Store.html"><button>XEM THÊM</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="sixthBanner-blockRight">
-          <img src="img/merch.jpg" alt="" />
-        </div>
-      </div>
     </main>
     <footer>
       <div class="footer--top-container">
@@ -363,7 +285,6 @@ onblur="this.placeholder = 'Search'">
         </div>
       </div>
     </footer>
-    
   </body>
   <script src="js/all.min.js"></script>
    <script

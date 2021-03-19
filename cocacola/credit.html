@@ -3,12 +3,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thông tin sản phẩm | Coca-Cola® Việt Nam</title>
-    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <title>Hình thức thanh toán | Coca-Cola® Việt Nam</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon"/>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/cocaProduct.css" />
-     <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/confirm.css">
+    <link rel="stylesheet" href="css/credit.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
@@ -25,7 +25,7 @@
         <div class="menu-wrapper-web">
           <div class="menu-block">
             <ul>
-              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="index.html" >Trang chủ</a></li>
               <li><a href="">Về Coca-Cola®</a></li>
               <li><a href="cocaType.html">Sản phẩm</a></li>
               <li><a href="brand.html">Thương hiệu</a></li>
@@ -40,7 +40,7 @@
           <div class="icon icon--shopping">
             <a href="confirm.html"><i class="fas fa-shopping-cart"></i></a>
           </div>
-          <div class="icon icon--profile" onclick="open_log()"><a href="account.html"><i class="fas fa-user"></a></i></div>
+          <div class="icon icon--profile" onclick="open_log()"><a><i class="fas fa-user"></a></i></div>
         </div>
       </div>
       <div class="header--burgermenu-expand">
@@ -48,7 +48,7 @@
         <div class="menu-wrapper">
           <div class="menu-block">
             <ul>
-              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="index.html" >Trang chủ</a></li>
               <li><a href="">Về Coca-Cola® Việt Nam</a></li>
               <li><a href="cocaType.html">Thông tin sản phẩm</a></li>
               <li><a href="brand.html">Thương hiệu</a></li>
@@ -66,11 +66,11 @@
               </div>
                <div class="body--login">
                    <h3>Chào mừng bạn đến <br>với Coca-Cola®</h3>
-                   <div class="login-input"><input type="text" placeholder="Email"></div>
-                   <div class="login-input"><input type="text"placeholder="Mật khẩu"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="checkusername"></div>
+                   <div class="login-input"><input type="text"placeholder="Mật khẩu" id="checkpassword"></div>
                    <h4>Quên mật khẩu</h4>
                    <div class="button button--login-red">
-                <button>ĐĂNG NHẬP</button>
+                <button id="loginAcc">ĐĂNG NHẬP</button>
                  </div>
                  <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
                  <div class="button button--login-blue">
@@ -92,10 +92,10 @@
                <div class="body--login">
                  <div class="login-input"><input type="text" placeholder="Họ và Tên"></div>
                  <div class="login-input"><input type="date" placeholder="Tuổi"></div>
-                   <div class="login-input"><input type="text" placeholder="Email"></div>
-                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="username"></div>
+                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu" id="password"></div>
                    <div class="button button--login-red" style="margin-top:10px">
-                <button>ĐĂNG KÝ</button>
+                <button id="createAcc">ĐĂNG KÝ</button>
                  </div>
                  <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
                  <div class="button button--login-blue">
@@ -120,101 +120,176 @@ onblur="this.placeholder = 'Search'">
       </div>
     </header>
     <main>
-      <div class="main--wrapper">
-        <div class="pageNav">
-          <a href=""><h4>Trang chủ</h4></a>
-          <a href=""><h4>/Cửa hàng</h4></a>
-          <a href=""><h4>/COKE  </h4></a>
-          <a href=""><h4>/CUSTOM COKE</h4></a>
+        <div class="main--wrapper">
+             <div class="pageNav">
+          <a href="index.html"><h4>Trang chủ</h4></a>
+          <a href="Store.html"><h4>/Cửa hàng</h4></a>
+          <a href="product.html"><h4>/Hoodie</h4></a>
+          <a href=""><h4>/Thanh toán</h4></a>
         </div>
+        <h1>thanh toán</h1>
         <div class="main--container-firstBanner">
-          <div class="firstBanner-leftBlock">
-              <div class="leftBlock-img"><img src="img/ck_1_1.png" alt="">
-              <h4 id="nameChange"></h4>
-            </div>
-          </div>
-          <div class="firstBanner-rightBlock">
-            <h1>Cá nhân hóa ‘Coke’ của bạn</h1>
-            <div class="rightBlock-star">
-              <div class="star-filled"><i class="fas fa-star"></i></div>
-              <div class="star-filled"><i class="fas fa-star"></i></div>
-              <div class="star-filled"><i class="fas fa-star"></i></div>
-              <div class="star-filled"><i class="fas fa-star"></i></div>
-              <div class="star-outline"><i class="far fa-star"></i></div>
-            </div>
-            <div class="item-price">
-              <div class="price-sale">
-                <h6>120.000₫</h6>
+            <div class="firstBanner-block">
+              <div class="block-line"></div>
+              <div class="block-check">
+              <i class="fas fa-check"></i>
+              <h4>Chọn địa chỉ</h4>
               </div>
             </div>
-            <h4>Số lượng (thùng)</h4>
-            <div class="product-numb"><input type="text" placeholder="1" onfocus="this.placeholder = ''"
-onblur="this.placeholder = '1'"></div>
-            <h4>Tên của bạn</h4>
-            <div class="input input--discount" style="margin-bottom: 30px;">
-            <input type="text" id="myNameInput" oninput="customizeName()" placeholder="Nhập tối đa 12 kí tự" />
-            
+             <div class="firstBanner-block">
+               <div class="block-line"></div>
+               <div class="block-check">
+              <i class="fas fa-check"></i>
+              <h4>Xác nhận giỏ hàng</h4>
+              </div>
             </div>
-            <div class="button button-black"><button>Thêm vào giỏ hàng</button></div>
-            <div class="button button-red"><button>Mua ngay</button></div>
-            <div class="dropblock" style="margin-bottom: 10px;">
-              <ul>
-                <li id="firstLiTop" onclick="dropDownLiTop()"><h3 >Thông tin sản phẩm</h3><span style="color: black;"><i class="fas fa-chevron-up"></i></span></li>
-                <div class="liTop-wrapper">
-                <li>Hoodie xanh</li>
-                <li>100% polieste</li>
-                <li>Sợi vải mềm và mịn</li>
-                <li>Chất lượng in đảm bảo</li>
-                </div>
-              </ul>
+             <div class="firstBanner-block">
+              <div class="block-line"></div>
+              <h4>Hình thức thanh toán</h4>
             </div>
-            <div class="dropblock">
-              <ul>
-                <li id="firstLi"><h3 onclick="dropDownLi()">Hướng dẫn bảo quản</h3><span style="color: black;"><i class="fas fa-chevron-up"></i></span></li>
-                <div class="li-wrapper">
-                <li>Nhiệt độ nước giặt không quá 30*C</li>
-                <li>Không nên giặt quá lâu, quá mạnh tay</li>
-                <li>Không sử dụng máy sấy</li>
-                <li>Luôn phơi trong bóng râm</li>
+             <div class="firstBanner-block">
+              <div class="block-line"></div>
+              <h4>Đặt hàng thành công</h4>
+            </div>
+        </div>
+        <h2>Thông tin thanh toán</h2>
+        <div class="main--container-secondBanner">
+          <div class="secondBanner-leftBlock">
+          <div class="secondBanner-Credit">
+            <div class="Credit-choice">
+              <input type="radio" name="payment" id="open_credit">
+              <div class="credit-img"><img src="img/credit-card.svg" alt=""></div>
+              <h3>Credit card</h3>
+            </div>
+            <div class="Credit-des">
+              <div class="Credit-des-firstBlock">
+                <div class="firstBlock-left">
+                  <h3>Mã số thẻ</h3>
+                  <div class="cardNumb">
+                    <img src="img/card.png" alt="" >
+                  <input type="text" name="" id="" placeholder="4111 1111 1111 1111" onfocus="this.placeholder = ''"
+onblur="this.placeholder = '4111 1111 1111 1111'">
+                  </div>
+                  <div class="Credit-Type">
+                    <div class="Union-img card"><img src="img/CreditAE.png" alt=""></div>
+                    <div class="master-img card" ><img src="img/CreditMaster.png" alt=""></div>
+                    <div class="visa-img card" ><img src="img/CreditVisa.png" alt="img/c"></div>
+                    <div class="discover-img card"><img src="img/CreditDI.png" alt=""></div>
+                  </div>
                 </div>
-              </ul>
+                <div class="firstBlock-right">
+                  <h3>Ngày hết hạn</h3>
+                  <input type="text" placeholder="1/2021 " onfocus="this.placeholder = ''"
+onblur="this.placeholder = '1/2021'">
+                </div>
+              </div>
+              <div class="Credit-des-secondBlock">
+                <h3>Số xác minh thẻ</h3>
+                <input type="text" placeholder="CVV " onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'CVV'">
+              </div>
+              <div class="button button-black"><a href="bill.html"><button>Thanh toán</button></a></div>
             </div>
           </div>
+          <div class="leftBlock-line"></div>
+          <div class="secondBanner-Paypal">
+            <div class="Paypal-choice">
+              <input type="radio" name="payment" id="close_credit">
+              <div class="paypal-img"><img src="img/paypal.png" alt=""></div>
+              <h3>Paypal</h3>
+            </div>
+            <div class="Credit-des-2">
+              <div class="Credit-des-firstBlock">
+                <div class="firstBlock-left">
+                  <h3>Mã số thẻ</h3>
+                  <div class="cardNumb">
+                    <img src="img/card.png" alt="" >
+                  <input type="text" name="" id="" placeholder="4111 1111 1111 1111" onfocus="this.placeholder = ''"
+onblur="this.placeholder = '4111 1111 1111 1111'">
+                  </div>
+                </div>
+                <div class="firstBlock-right">
+                  <h3>Ngày hết hạn</h3>
+                  <input type="text" placeholder="1/2021 " onfocus="this.placeholder = ''"
+onblur="this.placeholder = '1/2021'">
+                </div>
+              </div>
+              <div class="Credit-des-secondBlock">
+                <h3>Số xác minh thẻ</h3>
+                <input type="text" placeholder="CVV " onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'CVV'">
+              </div>
+              <div class="button button-black"><a href="bill.html"><button>Thanh toán</button></a></div>
+            </div>
+          </div>
+           <div class="leftBlock-line"></div>
+          </div>
+          <div class="secondBanner-rightBlock">
+            <div class="rightBLock-Receipt">
+            <h3>Mua hàng</h3>
+            <div class="rightBlock-line"></div>
+            <h4 style="text-align: center;">Ước tính giá trị chi phí ship và thuế hàng hóa</h4>
+            <div class="rightBlock-line"></div>
+            <div class="rightBlock-price">
+              <h5>Thành tiền</h5>
+              <p>500.000₫</p>
+            </div>
+            <div class="rightBlock-ship">
+              <h5>Phí ship</h5>
+              <p>30.000₫</p>
+            </div>
+            <div class="rightBlock-line"></div>
+            <div class="rightBLock-final">
+              <h4>Tổng giá trị hóa đơn</h4>
+              <p>530.000₫</p>
+            </div>
+          </div>
+          <div class="rightBLock-Shipment">
+            <h3>Vận chuyển</h3>
+            <div class="rightBlock-line"></div>
+            <h5 style="margin-bottom: 10px;">Thông tin khách hàng</h5>
+            <p>Viet Le</p>
+            <p>So 11, ngo 127, An Trach, Dong Da, Ha Noi</p>
+            <p>0972136868</p>
+          </div>
+          </div>
         </div>
-        <div class="main--container-secondBanner">
-          <div class="secondBanner-block">
-            <div class="secondBanner-block-img"><img src="img/Delivery-icon.jpg" alt=""></div>
-            <div class="secondBanner-block-des">
+        <div class="main--container-thirdBanner">
+          <div class="thirdBanner-block">
+            <div class="thirdBanner-block-img"><img src="img/Delivery-icon.jpg" alt=""></div>
+            <div class="thirdBanner-block-des">
               <h4>Miễn phí vận chuyển</h4>
               <h5>Đơn hàng trên 500.000₫</h5>
             </div>
           </div>
-          <div class="secondBanner-block">
-            <div class="secondBanner-block-img"><img src="img/Return-icon.jpg" alt=""></div>
-            <div class="secondBanner-block-des">
+          <div class="thirdBanner-block">
+            <div class="thirdBanner-block-img"><img src="img/Return-icon.jpg" alt=""></div>
+            <div class="thirdBanner-block-des">
               <h4>30 ngày đổi trả</h4>
               <h5>Đơn hàng trên 500.000₫</h5>
             </div>
           </div>
-          <div class="secondBanner-block">
-            <div class="secondBanner-block-img"><img src="img/Payment-icon.jpg" alt=""></div>
-            <div class="secondBanner-block-des">
+          <div class="thirdBanner-block">
+            <div class="thirdBanner-block-img"><img src="img/Payment-icon.jpg" alt=""></div>
+            <div class="thirdBanner-block-des">
               <h4>Thanh toán an toàn</h4>
               <h5>100% an toàn khi thanh toán</h5>
             </div>
           </div>
-          <div class="secondBanner-block">
-            <div class="secondBanner-block-img"><img src="img/Support-icon.jpg" alt=""></div>
-            <div class="secondBanner-block-des">
+          <div class="thirdBanner-block">
+            <div class="thirdBanner-block-img"><img src="img/Support-icon.jpg" alt=""></div>
+            <div class="thirdBanner-block-des">
               <h4>Tư vấn miễn phí</h4>
               <h5>Tư vấn 24/7</h5>
             </div>
           </div>
         </div>
-      </div>
-      <div class="main--container-thirdBanner">
-          <div class="thirdBanner-wrapper">
-          <div class="thirdBanner-des"><h3>Nhận thông tin khuyến mãi mới nhất từ Coca-Cola Việt Nam</h3></div>
+        </div>
+
+        
+      <div class="main--container-forthBanner">
+          <div class="forthBanner-wrapper">
+          <div class="forthBanner-des"><h3>Nhận thông tin khuyến mãi mới nhất từ Coca-Cola Việt Nam</h3></div>
           <div class="input input--discount">
           <input type="text" placeholder="Địa chỉ Mail" />
           <button>ĐĂNG KÝ</button>
@@ -284,16 +359,16 @@ onblur="this.placeholder = '1'"></div>
           <img src="img/footer-logo.png" alt="" />
           <div class="footer-icon-responsive">
             <div class="icon icon-facebook">
-              <img src="img/coke-facebook.svg" alt="" />
+              <a></a><i class="fab fa-facebook-square"></i>
             </div>
             <div class="icon icon-insta">
-              <img src="img/coke-instagran.svg" alt="" />
+              <i class="fab fa-instagram-square"></i>
             </div>
             <div class="icon icon-twitter">
-              <img src="img/coke-twitter.svg" alt="" />
+              <i class="fab fa-twitter-square"></i>
             </div>
             <div class="icon icon-youtube">
-              <img src="img/coke-youtube.svg" alt="" />
+              <i class="fab fa-youtube-square"></i>
             </div>
           </div>
         </div>
@@ -302,32 +377,31 @@ onblur="this.placeholder = '1'"></div>
         </div>
         <div class="footer-icon">
           <div class="icon icon-facebook">
-            <img src="img/coke-facebook.svg" alt="" />
+            <i class="fab fa-facebook-square"></i>
           </div>
           <div class="icon icon-insta">
-            <img src="img/coke-instagran.svg" alt="" />
+            <i class="fab fa-instagram-square"></i>
           </div>
           <div class="icon icon-twitter">
-            <img src="img/coke-twitter.svg" alt="" />
+            <i class="fab fa-twitter-square"></i>
           </div>
           <div class="icon icon-youtube">
-            <img src="img/coke-youtube.svg" alt="" />
+            <i class="fab fa-youtube-square"></i>
           </div>
         </div>
       </div>
     </footer>
   </body>
   <script src="js/all.min.js"></script>
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-1.11.0.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-  ></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/product.js"></script>
-  <script src="js/cocaProduct.js"></script>
+   <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/credit.js"></script>
+    <script src="js/main.js"></script>
 </html>

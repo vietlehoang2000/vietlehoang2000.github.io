@@ -24,9 +24,9 @@
         <div class="menu-wrapper-web">
           <div class="menu-block">
             <ul>
-              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="index.html" >Trang chủ</a></li>
               <li><a href="">Về Coca-Cola®</a></li>
-              <li><a href="cocaType.html">Sản phẩm</a></li>
+              <li><a href="cocaType.html" style="color: red;">Sản phẩm</a></li>
               <li><a href="brand.html">Thương hiệu</a></li>
               <li><a href="Store.html">Cửa hàng</a></li>
             </ul>
@@ -39,7 +39,7 @@
           <div class="icon icon--shopping">
             <a href="confirm.html"><i class="fas fa-shopping-cart"></i></a>
           </div>
-          <div class="icon icon--profile" onclick="open_log()"><a href="account.html"><i class="fas fa-user"></a></i></div>
+          <div class="icon icon--profile" onclick="open_log()"><a><i class="fas fa-user"></a></i></div>
         </div>
       </div>
       <div class="header--burgermenu-expand">
@@ -47,9 +47,9 @@
         <div class="menu-wrapper">
           <div class="menu-block">
             <ul>
-              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="index.html" >Trang chủ</a></li>
               <li><a href="">Về Coca-Cola® Việt Nam</a></li>
-              <li><a href="cocaType.html">Thông tin sản phẩm</a></li>
+              <li><a href="cocaType.html" style="color: red;">Thông tin sản phẩm</a></li>
               <li><a href="brand.html">Thương hiệu</a></li>
               <li><a href="cocaProduct.html">Cá nhân hóa</a></li>
               <li><a href="Store.html">Cửa hàng</a></li>
@@ -65,11 +65,11 @@
               </div>
                <div class="body--login">
                    <h3>Chào mừng bạn đến <br>với Coca-Cola®</h3>
-                   <div class="login-input"><input type="text" placeholder="Email"></div>
-                   <div class="login-input"><input type="text"placeholder="Mật khẩu"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="checkusername"></div>
+                   <div class="login-input"><input type="text"placeholder="Mật khẩu" id="checkpassword"></div>
                    <h4>Quên mật khẩu</h4>
                    <div class="button button--login-red">
-                <button>ĐĂNG NHẬP</button>
+                <button id="loginAcc">ĐĂNG NHẬP</button>
                  </div>
                  <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
                  <div class="button button--login-blue">
@@ -91,10 +91,10 @@
                <div class="body--login">
                  <div class="login-input"><input type="text" placeholder="Họ và Tên"></div>
                  <div class="login-input"><input type="date" placeholder="Tuổi"></div>
-                   <div class="login-input"><input type="text" placeholder="Email"></div>
-                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="username"></div>
+                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu" id="password"></div>
                    <div class="button button--login-red" style="margin-top:10px">
-                <button>ĐĂNG KÝ</button>
+                <button id="createAcc">ĐĂNG KÝ</button>
                  </div>
                  <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
                  <div class="button button--login-blue">
