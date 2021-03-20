@@ -134,7 +134,7 @@ function nextPage() {
 
 //open filter
 $("#filter-drp").click(function () {
-  $(".order-drop").slideDown(1000);
+  $(".order-drop").slideDown(500);
   $("#filter-chevron").css({
     transform: "rotate(180deg)",
     transition: "all 0.3s ease-in -out",
@@ -146,7 +146,7 @@ $(".drop-item").click(function () {
   let filter = $("#filter-drp").text();
   $("#filter-drp").text( $(this).text());
   $(this).text(filter);
-  $(".order-drop").slideUp(1000);
+  $(".order-drop").slideUp(500);
   $("#filter-chevron").css({
     transform: "rotate(360deg)",
     transition: "all 0.3s ease-in -out",
@@ -155,7 +155,7 @@ $(".drop-item").click(function () {
 
 // open sizefilter
 $("#dropButton").click(function () {
-  $(".size-block-drop").slideDown(1000);
+  $(".size-block-drop").slideDown(500);
   $("#size-chevron").css({
     transform: "rotate(180deg)",
     transition: "all 0.3s ease-in -out",
@@ -167,7 +167,7 @@ $(".size-item").click(function () {
   var text = $(this).text();
   $(this).text($("#dropButton-text").text());
   $("#dropButton-text").text(text);
-  $(".size-block-drop").slideUp(1000);
+  $(".size-block-drop").slideUp(500);
   $("#size-chevron").css({
     transform: "rotate(360deg)",
     transition: "all 0.3s ease-in -out",

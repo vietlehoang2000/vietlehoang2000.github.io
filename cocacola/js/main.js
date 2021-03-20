@@ -77,10 +77,10 @@ $(document).mouseup(function (e) {
 $("#createAcc").click(function () {
   let nameinput = $("#username").val();
   let passinput = $("#password").val();
-  if (nameinput == "" && passinput == "") alert("Dien thong tin");
+  if (nameinput == "" && passinput == "") alert("Điền sai thông tin");
   else {
-    localStorage.setItem("id", nameinput);
-    localStorage.setItem("pass", passinput);
+    localStorage.setItem("id", JSON.stringify(nameinput));
+    localStorage.setItem("pass", JSON.stringify(passinput));
     alert("Đăng ký thành công");
   }
 });
@@ -95,5 +95,6 @@ $("#loginAcc").click(function () {
     alert("Đăng nhập thành công");
     location.href = "account.html";
     localStorage.setItem("logged", "1");
-  } else alert("Sai tên tài khoản hoặc mật khẩu");
+  } else
+    alert("Sai tên tài khoản hoặc mật khẩu");
 });

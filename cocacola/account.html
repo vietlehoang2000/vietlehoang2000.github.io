@@ -125,13 +125,13 @@ onblur="this.placeholder = 'Search'">
                     <div class="info-img"><button><i class="fas fa-user-circle"></i></button></div>
                     <div class="info-name">
                         <h2>Vivian2000</h2>
-                        <div class="info-edit">
+                        <div class="info-edit" onclick="location.href='account.html';">
                         <h3>Thông tin cá nhân</h3>
                         <button><i class="fas fa-pen"></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="leftBlock-addr">
+                <div class="leftBlock-addr" onclick="location.href='address.html';">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Địa chỉ</h3>
                 </div>
@@ -147,11 +147,11 @@ onblur="this.placeholder = 'Search'">
                 <div class="acc-wrapper">
                 <div class="acc-detail">
                     <h3>Tên đăng nhập</h3>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="checkaccountname">
                     <h3>Họ & Tên</h3>
-                    <input type="text">
+                    <input type="text" id="fullname">
                     <h3>Số điện thoại</h3>
-                    <input type="text">
+                    <input type="text" id="checkphone">
                     <h3>Giới tính</h3>
                     <div class="gender-check">
                     <input type="radio" name="gender">
@@ -162,7 +162,7 @@ onblur="this.placeholder = 'Search'">
                     <h4>Khác</h4>
                     </div>
                     <h3>Ngày sinh</h3>
-                    <input type="text">
+                    <input type="text" id="dob">
                   </br>
                     <button class="button button-red">Lưu</button>
                 </div>
@@ -283,4 +283,5 @@ onblur="this.placeholder = 'Search'">
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/account.js"></script>
 </html>
