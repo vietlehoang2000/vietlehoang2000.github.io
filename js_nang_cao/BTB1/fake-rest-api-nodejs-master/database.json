@@ -63,15 +63,18 @@
       "id": 8
     },
     {
-      "id": 9,
-      "name": "Davina Tassaker",
-      "email": "dtassaker8@latimes.com",
-      "password": "dtassaker8",
-      "phone": "932-840-1592",
-      "birthday": "10/24/2000",
-      "bio": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-      "gender": "Female",
-      "avatar": "https://robohash.org/liberoametdolores.png?size=150x150&set=set1"
+      "name": "123",
+      "birthYear": "",
+      "email": "",
+      "phone": "",
+      "id": 9
+    },
+    {
+      "name": "2341234",
+      "birthYear": "",
+      "email": "",
+      "phone": "",
+      "id": 11
     }
   ],
   "products": [
