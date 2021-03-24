@@ -27,7 +27,7 @@
       <h1 class="text-center mt-4">Danh sách học viên</h1>
 
       <p>
-        <a href="/create.html" class="btn btn-success"
+        <a href="create.html" class="btn btn-success"
           ><i class="fa fa-plus-circle"></i> Thêm học viên</a
         >
       </p>
@@ -157,7 +157,8 @@
         type="button"
         id="target"
         class="btn btn-warning"
-        data-toggle="modal" data-target="#exampleModal2"
+        data-toggle="modal"
+        data-target="#exampleModal2"
         onclick="deleteMultiples()"
       >
         Delete
@@ -230,7 +231,7 @@
 
       //   loadDoc();
       loadDocJQuery();
-      
+
       //delete one user
 
       var saveDeleteUser;
@@ -259,16 +260,13 @@
       $("#target").hide();
       function showdiv() {
         $("#target").show();
-        if(
-        $('input:checkbox:checked').length==0)
-        $("#target").hide();  
+        if ($("input:checkbox:checked").length == 0) $("#target").hide();
       }
       var checkedBox = [];
       function deleteMultiples() {
         // var checkboxes = $('input:checkbox:checked').length;
         // alert(checkboxes);
 
-        
         $("input:checkbox").each(function () {
           var $this = $(this);
           var str = $this.attr("id");
@@ -281,9 +279,8 @@
         console.log(checkedBox);
       }
 
-      function deleteMultipleUsers(){
-        for(i=0;i<checkedBox.length;i++)
-        {
+      function deleteMultipleUsers() {
+        for (i = 0; i < checkedBox.length; i++) {
           $.ajax({
             url: "http://localhost:3000/users/" + checkedBox[i],
             type: "DELETE",
